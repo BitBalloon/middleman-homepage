@@ -20,4 +20,4 @@ Now BitBalloon includes a very effective spam filter that will catch the bulk of
 
 Since we put the spam filter in place, almost 30% of all the form submissions submitted has been filtered out by the spam filter, and only about 1 in thousand submissions have been wrongly flagged as spam.
 
-<smal>Spam illustration by [Jean Pierre Gallot](http://www.flickr.com/photos/jean_pierre_gallot_69009/8456188320/#)</smal>
+<small>Spam illustration by [Jean Pierre Gallot](http://www.flickr.com/photos/jean_pierre_gallot_69009/8456188320/#)</small>

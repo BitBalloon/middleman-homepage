@@ -19,11 +19,11 @@ As a bonus your JS and CSS will be bundled and minified, your images will be run
 
 The first step is simply to get a Jekyll site up and running. You can obviously skip this step if you already have a Jekyll based site:
 
-{% highlight bash %}
+```bash
 gem install jekyll
 jekyll new continuous-deployment-rocks
 cd continuous-deployment-rocks
-{% endhighlight %}
+```
 
 We'll also create a new GitHub repository and push our new Jekyll site. You can find the example repository [here](https://github.com/BitBalloon/jekyll-continuos-deployment).
 
@@ -31,11 +31,11 @@ We'll also create a new GitHub repository and push our new Jekyll site. You can 
 
 Before we get started on automating our deploys, we'll do a first manual deploy to BitBalloon through the ruby gem.
 
-{% highlight bash %}
+```bash
 gem install bitballoon
 jekyll build
 bitballoon deploy _site
-{% endhighlight %}
+```
 
 The first time you deploy, you'll be prompted for your BitBalloon API credentials. So go [create a BitBalloon API application](https://www.bitballoon.com/applications). Once you're done, enter your client id and secret.
 
@@ -51,7 +51,7 @@ To get it to listen to your new Jekyll repository, go to your profile page insid
 
 To do this you need to add a `.travis.yml` configuration file to the root of your repository:
 
-{% highlight yaml %}
+```yaml
 language: ruby
 before_install:
 - travis_retry gem install bitballoon
@@ -61,15 +61,15 @@ after_success: bitballoon deploy _site --access-token=$BB_ACCESS_TOKEN --site-id
 branches:
   only:
     - master
-{% endhighlight %}
+```
 
 Before you're ready to push, you need to add some encrypted variables to the Travis configuration, so you can reference your BitBalloon access token without sharing it with the world:
 
-{% highlight bash %}
+```bash
 gem install travis
 travis encrypt BB_ACCESS_TOKEN=<access token from .bitballoon> --add
 travis encrypt BB_SITE_ID=<site id from .bitballoon> --add
-{% endhighlight %}
+```
 
 This will encrypt both settings and add them to your `.travis.yml` file.
 
@@ -77,11 +77,11 @@ This will encrypt both settings and add them to your `.travis.yml` file.
 
 That's it. Now check in the changes and push to GitHub:
 
-{% highlight bash %}
+```bash
 git add .
 git commit -a -m "configure continous deploys with Travis CI and BitBalloon"
 git push origin master
-{% endhighlight %}
+```
 
 Travis should register a new commit and start going to work. The free version of Travis doesn't cache dependencies, so it has to install both Jekyll and BitBalloon on each build. Be a little patient. After the built is done, you should see a new version has appeared in the history tab of your BitBalloon dashboard.
 

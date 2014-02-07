@@ -6,6 +6,9 @@
 
   <title><%= current_page.data.title || "BitBalloon"%></title>
 
+  <meta name="description" content="<%= current_page.data.description || "The fastest, simplest HTML5 hosting platform on the planet" %>">
+  <meta property="og:image" content="<%= current_page.data.image || "http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/36e8c018-1228-4717-a0e9-028457741552/balloonbot.png" %>">
+
   <%= stylesheet_link_tag 'site' %>
 </head>
 <body class="<%= current_page.data.class_name %>">

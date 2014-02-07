@@ -76,9 +76,12 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    mini_portile (0.5.2)
     multi_json (1.8.4)
     multi_xml (0.5.5)
     multipart-post (1.2.0)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     oauth2 (0.9.2)
       faraday (~> 0.8)
       httpauth (~> 0.2)
@@ -127,5 +130,6 @@ DEPENDENCIES
   middleman (~> 3.2.1)
   middleman-blog
   middleman-livereload (~> 3.1.0)
+  nokogiri
   redcarpet
   wdm (~> 0.1.0)

@@ -13,16 +13,16 @@ For small personal projects, you might want to do a new deploy whenever you do a
 
 Start by installing the bitballoon ruby gem:
 
-{% highlight bash %}
+```bash
 gem install bitballoon
-{% endhighlight %}
+```
 ## Run a manual deploy
 
 Then do an initial deploy manually from your git repository:
 
-{% highlight bash %}
+```bash
 bitballoon deploy
-{% endhighlight %}
+```
 
 This will prompt you for a API Client ID and secret. Create an API application [here](https://www.bitballoon.com/applications) and grab the credentials.
 
@@ -34,15 +34,15 @@ The bitballoon tool will create a `.bitballoon` file with your BitBalloon access
 
 Now create the file `.git/hooks/post-commit`:
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 bitballoon deploy
-{% endhighlight %}
+```
 
 And set the file permissions:
 
-{% highlight bash %}
+```bash
 chmod a+x .git/hooks/post-commit
-{% endhighlight %}
+```
 
 That's it! Try making a change to your site and do a commit. The new version will automatically get pushed to BitBalloon.
