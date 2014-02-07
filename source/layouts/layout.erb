@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width">
+
+  <title><%= current_page.data.title || "BitBalloon"%></title>
+
+  <%= stylesheet_link_tag 'site' %>
+</head>
+<body class="<%= current_page.data.class_name %>">
+  <script>
+  (function() { var i = document.createElement("input"); i.setAttribute("type", "file"); if (i.webkitEntries) { document.body.classList.add("folder-support"); }
+  })();
+  </script>
+  <header>
+    <div class="row">
+      <div class="large-5 medium-7 columns">
+        <h1 class="brand"><i class="icon-balloon"></i><a href="/"><img class="logo" src="/images/bitballoon-logo.svg" alt="BitBalloon logo"/></a></h1>
+        <div class="claim">Hosting for your HTML5 sites &amp; apps</div>
+      </div>
+      <div class="large-7 medium-5 columns">
+        <nav>
+          <ul class="inline-list inline-blocks right main-nav">
+            <li class="navlink"><a href="/features">Features</a></li>
+            <li class="navlink"><a href="/pricing">Pricing</a></li>
+            <li class="navlink"><a href="/blog">Blog</a></li>
+            <li class="navlink"><a href="/docs">Documentation</a></li>
+            <li>
+              <div class="auth">
+                <a href="#" id="login-button" class="login-button">Sign in</a>
+                <div class="dropdown login-dropdown">
+                  <a href="#" id="logout-button" class="dropdown-trigger user-name">Logged in</a>
+                  <ul>
+                    <li><a href="/sites">Your sites</a></li>
+                    <li><a href="#" class="logout-button">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+    <%= yield %>
+    <section class="site-footer">
+
+    <div class="row">
+      <div class="large-12 columns">
+        <footer class="text-center">
+          <ul class="inline-list inline-blocks">
+            <li><a href="/about">About</a></li>
+            <li><a href="/partner">Partner</a></li>
+            <li><a href="/docs">Docs</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/tos">Privacy &amp; Terms</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+
+    <div id="contact" class="reveal-modal small">
+      <div class="row">
+
+        <div class="large-12 columns">
+          <h2>Contact Us</h2>
+
+          <form name="request-a-demo">
+            <div class="row">
+              <div class="large-6 columns">
+                <p>
+                  <label>Name</label>
+                  <input name="name" type="text" required>
+                </p>
+              </div>
+              <div class="large-6 columns">
+                <p>
+                  <label>Email</label>
+                  <input name="email" type="email" required>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="large-12 columns">
+                <p>
+                  <label>Your message</label>
+                  <textarea name="message" rows="10" required></textarea>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-6 large-centered columns">
+                <button class="radius button expand" type="submit">Send</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+  </section>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <%= javascript_include_tag 'foundation/foundation', 'foundation/foundation.reveal',
+                             'foundation/foundation.section', 'foundation/foundation.magellan',
+                             'abalytics', 'prism', 'app' %>
+
+  <script>$(document).foundation();</script>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </body>
+</html>

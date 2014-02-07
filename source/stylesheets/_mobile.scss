@@ -1,0 +1,169 @@
+@media #{$large} {
+  .new.project-card {
+    .icon-cloud-upload {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media #{$medium} {
+
+  .dropzone .main-message {
+    font-size: 2.3em;
+    max-width: 17em;
+    margin: 2em auto 1em;
+  }
+  .dropzone .headline {
+    margin-top: 0.8em;
+    font-size: 2.5em;
+  }
+
+}
+
+@media #{$medium-small} {
+  .home-hero {
+    .dashed-box { display: none; }
+    .down-hint { display: none; }
+    .demo-cta { display: none; }
+    .main-message {
+      text-align: center;
+    }
+    .lead {
+      margin: 0 auto 1.2em;
+    }
+    .sign-up-button {
+      margin: 0 auto 1em;
+    }
+    .intro-video {
+      padding-left: 0;
+    }
+    .intro-video p {
+      display: none;
+    }
+  }
+
+  #reasons {
+    text-align: center;
+    .forms-list {
+      max-width: 17.1em;
+      margin: 0 auto 2em;
+      text-align: left;
+    }
+    h3 { margin-top: 1em !important; }
+    .large-3 {
+      img, i { margin-bottom: 0 !important; }
+    }
+    pre {
+      float: none;
+      display: block;
+      margin: 1em auto 1.4em;
+      max-width: 20em;
+    }
+    p { margin: 0 auto 1.7em; max-width: 25em; }
+    .node { margin: 0 1em 0 0; }
+    .akamai {
+      margin-top: .8em;
+    }
+
+  }
+
+  header nav .navlink { display: none !important; }
+
+  .project-card .date, .project-card .status {
+    font-size: 10px;
+  }
+  .new-deploy {
+    width: 100%;
+    .new.project-card {
+      .icon-cloud-upload {
+        font-size: 90px;
+        margin-top: 40px;
+      }
+      .headline {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 0 24px;
+      }
+      .spacer { width: 100%; max-width: 175px; }
+    }
+  }
+
+  .blog {
+    header {
+      .entry-title {
+        font-size: 2.1em;
+      }
+    }
+    .entry-content p {
+      font-size: 1.25em;
+    }
+  }
+
+}
+
+
+
+@media #{$small} {
+  header nav .navlink { display: none !important; }
+  body { padding: 0 }
+  .main { padding: 0; margin: 0; }
+  .sheet{
+    width: 100%;
+    margin: 24px 0;
+    padding: 10px;
+  }
+  .sky {
+    padding-bottom: 1em 1em 4em;
+  }
+  #reasons .node,
+  #reasons .ruby {
+    margin-bottom: 1.3em;
+  }
+  .home-hero {
+    .main-message {
+      margin: .4em auto 1em;
+      font-size: 1.6em;
+    }
+    .lead {
+      font-size: 1.3em;
+    }
+  }
+  header .main-nav {
+    margin-top: .3em
+  }
+
+  .inline-list.inline-blocks li:last-of-type {
+    display: block !important;
+  }
+
+
+  .dropzone .headline {
+    margin-top: 0.7em;
+    font-size: 2em;
+  }
+
+  .new-deploy {
+    .new.project-card {
+      .spacer { width: 100px; }
+      .headline { font-size: 16px; }
+    }
+  }
+
+  .blog header {
+    .entry-title {
+      font-size: 1.4em;
+    }
+    .entry-meta {
+      font-size: .7em;
+    }
+  }
+  .blog {
+    .entry-content p {
+      font-size: 1em;
+    }
+  }
+
+}
+
+
+

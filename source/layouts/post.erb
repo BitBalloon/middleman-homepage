@@ -1,0 +1,51 @@
+<% wrap_layout :layout do %>
+  <div class="main blog">
+    <section class="sheet">
+
+
+      <div class="row">
+        <div class="columns large-12">
+
+          <article class="hentry">
+            <header>
+              <h2 class="entry-title text-center"><%= current_page.data.title %></h2>
+
+              <p class="entry-meta">
+                Written by <%= current_page.data.author %> on
+                <time class="updated" datetime="<%= current_page.date %>" pubdate><%= current_page.date.strftime('%B %e %Y') %></time>
+              </p>
+            </header>
+
+            <div class="entry-content">
+              <hr/>
+
+              <%= yield %>
+
+              <hr class="extra-space"/>
+            </div>
+
+            <div class="read-next">
+              <h5>NEXT TO READ</h4>
+
+              {% for post in site.related_posts limit: 2 %}
+                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <p class="description">{{ post.description }}</p>
+                <p class="author">An article by {{post.author}}</p>
+              {% endfor %}
+
+            </div>
+
+            <div class="social-content">
+              <hr class="extra-space"/>
+              <div id="disqus_block">
+                {% include disqus.html %}
+              </div>
+            </div>
+
+          </article>
+        </div>
+      </div>
+
+    </section>
+  </div>
+<% end %>
