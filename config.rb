@@ -61,7 +61,7 @@ activate :livereload
 activate :blog do |blog|
   # set options on blog
   blog.prefix = "blog"
-  blog.permalink = ":year/:month/:day/:title"
+  blog.permalink = ":year/:month/:day/:title.html"
   blog.summary_separator = /<!-- excerpt -->/
 end
 
