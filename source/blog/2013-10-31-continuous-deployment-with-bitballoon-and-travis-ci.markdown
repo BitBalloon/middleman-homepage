@@ -3,6 +3,7 @@ title: Building and Deploying BitBalloon.com with Travis CI and Punch
 author: Mathias Biilmann
 description: Setting up Continuous Deployments with GitHub, Travis CI and BitBalloon
 image: /images/posts/continuous-deployment.png
+tags: ["Continuous Deployment", "API", "Travis CI", "Punch"]
 ---
 
 At BitBalloon we like to eat our own dog-food, so while our public website started out as just a part of our Rails application, we always wanted to build it as a static site and host it with BitBalloon.

@@ -3,6 +3,7 @@ title: "Forklet: Editable Web Snapshots"
 author: Michael Ruescher
 description: Introducing the Forklet Chrome extension, fork any page on the web!
 image: /images/posts/forklet.png
+tags: ["Forklet", BitBalloon"]
 ---
 
 Whether you're prototyping a site with the web inspector taking a screen-shot is often not enough. Wouldn't it be great if you could take a code snapshot instead?

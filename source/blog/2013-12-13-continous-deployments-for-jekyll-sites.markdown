@@ -2,6 +2,7 @@
 title: "Continuous Deployment for Jekyll sites"
 author: Mathias Biilmann
 description: "Using BitBalloon and TravisCI to get continuous deployments for Jekyll sites without GitHub pages' limitations"
+tags: ["TravisCI", "Continuous Deployment", "API", "Jekyll"]
 ---
 
 A great part of the popularity of [Jekyll](http://jekyllrb.com/) no doubt comes from GitHub Page's Jekyll integration. Every GitHub Page is run through Jekyll when you push content to your repository, so you get continuous deployments out of the box.

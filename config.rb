@@ -67,6 +67,15 @@ end
 
 page "/blog/*", :layout => "post"
 
+helpers do
+  def related(page, limit = 3)
+    all_pages = blog.tags.slice(*page.tags).values.flatten
+    return [] if all_pages.blank?
+
+    all_pages.delete_if { |p| p.url == page.url }[0..limit-1]
+  end
+end
+
 # Build-specific configuration
 configure :build do
 
