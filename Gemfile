@@ -16,6 +16,9 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # For blogpost summaries
 gem "nokogiri"
 
+# For atom feed
+gem "builder"
+
 # For deploying to BitBalloon
 gem "bitballoon"
 

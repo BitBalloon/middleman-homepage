@@ -66,6 +66,7 @@ activate :blog do |blog|
 end
 
 page "/blog/*", :layout => "post"
+page "/blog.xml", :layout => false
 
 helpers do
   def related(page, limit = 3)
