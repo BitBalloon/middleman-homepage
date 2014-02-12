@@ -33,7 +33,6 @@ It provides tools for managing various aspects of your site, such as:
 * footer code snippets
 
 
-
 <a name="form-handling"/></a>
 ### Form Handling
 
@@ -57,6 +56,21 @@ If the form action is left blank, or the html page you are pointing it to does n
 Form submissions are accessible from the "Forms" tab in your site dashboard. Here you can also setup email notifications and export the form submissions as a .csv file.
 
 As with every other BitBalloons feature, form submissions are accessible from the <a href="https://github.com/BitBalloon/bitballoon-api">API</a>. Checkout our <a href="/docs/zapier">Zapier integration</a> to connect your BitBalloon forms to hundreds of useful cloud services without doing any programming!
+
+
+### Custom 404 Pages
+
+To configure a custom 404 page, just make sure your site folder has a file called `404.html` in the root. This page will be used whenever there's a page not found.
+
+
+### Redirects and Rewrite Rules
+
+You can configure redirects and rewrite rules by adding a `_redirects` file in the root of your site folder. The simplest possible `_redirects` file is just a list of redirects like this:
+
+/news /blog
+/some/old/url /the/new/url
+
+Read the [Redirects and Rewrite Rules](/docs/redirects_and_rewrites) guide for all the details on what the `_redirects` can do.
 
 
 ### Snippets
