@@ -46,7 +46,7 @@ This would redirect a url like `/news/2004/02/12/my-story` to `/blog/2004/02/12/
 
 An asterisk indicates a **splat** that will match anything that follows:
 
-    /*    /   200
+    /*    /index.html   200
 
 Will serve the home page for any path with 200 as status code. This can be really useful for angular apps or other one-page apps using history pushstate.
 
@@ -66,3 +66,10 @@ You can also match on query parameters:
 In this case the path `/blog?post=my-blog-post` would redirect to `/blog/my-blog-post`
 
 
+### Note on shadowing
+
+You currently can't shadow a URL that actually exists within the site. This means that even if you've setup the following rewrite rule:
+
+    /*   /index.html   200
+
+The path `/partials/chat.html` would still render the contents of that file, if that file actually exists.

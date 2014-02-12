@@ -24,9 +24,15 @@ If you’re looking to add static site publishing component into a SaaS web auth
 
 The first one is that Amazon by default limits you to 100 Buckets per account, and each site uses one up. For a few sites this obviously won’t be a problem, but if you’re looking to build a tool that publishes websites at a large scale, this could spell trouble.
 
+
 ### Latency
 
-On it's own, S3 will give you poor latency, since it's not optimized for that. So if you use S3 for static hosting you should always combine it with Cloudfront (or another CDN).
+On it's own, S3 will give you poor latency, since it's not optimized for that. So if you use S3 for static hosting you should always combine it with Cloudfront (or another CDN). Setting this up correctly can be quite a bit of work and often you'll end up having to wait from the moment you deploy a change to your site till it actually shows up on the CDN backed page. With BitBalloon all changes are instant.
+
+Here's Pingdoms performance test running against the exact same site folder uploaded to S3 and BitBalloon:
+
+* <a href="http://tools.pingdom.com/fpt/#!/bfDfyO/http://speedtestsite.s3-website-us-east-1.amazonaws.com/" target="_blank">The test site on S3</a>
+* <a href="http://tools.pingdom.com/fpt/#!/7iV4p/speedtest.bitballoon.com" target="_blank">The test site on BitBalloon</a>
 
 ### Vary: Accept-Encoding HTTP header
 
@@ -45,6 +51,12 @@ S3 doesn’t do atomic deploys. So typically if you deploy a new version of the 
 BitBalloon will process all your assets during each deploy and create unique urls for each piece of content, set far future caching headers and update the HTML to refer to the CDN URLs of the new bundled, minified and cache-optimized assets. We also run all images through lossless image optimization.
 
 Often sites deployed to BitBalloon will get close to 100/100 score on Pingdom Speed Test tool because of all those web performance optimizations. Obviously if you want to achieve a similar result on S3/Cloudfront, it takes quite a bit of work to get it all right.
+
+### Redirect and Rewrite Rules
+
+S3 does let you configure basic redirects, but there's limited flexibility and the XML syntax for specifying the rewrite rules is not the most intuitive. There's currently no way to do the kind rewrite rules you would need to get history pushstate to work for an Angular or Ember app.
+
+BitBalloon lets you add a simple [_rewrites](/docs/redirects_and_rewrites) file to your site folder. It's an easy to read list of redirects and rewrites and it's powerful enough to setup even complex redirects with placeholders or matches on query parameters. It also lets you do rewrites and you can easily make single page history pushstate based apps work.
 
 ### Form processing
 
