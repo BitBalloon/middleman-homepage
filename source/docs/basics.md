@@ -40,16 +40,15 @@ It provides tools for managing various aspects of your site, such as:
 Here's an example of a regular web form that will automatically work on BitBalloon.
 
 
-{% highlight html %}
+```html
 <form name="signup" action="thank-you.html">
   First Name: <input type="text" name="first_name">
   Email: <input type="email" name="email">
   <button>Sign me up</button>
 </form>
-{% endhighlight %}
+```
 
 The <strong>name</strong> attributes on the form and input tags tell the database how to label the data.
-
 
 The <strong>action</strong> attribute on the form tag specifies a url path to show a custom success page when the form is submitted. Use a full path with a .html suffix file to easily test out your form success page in local development. When you deploy the site, BitBalloon will automatically "prettify" the url.
 
