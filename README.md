@@ -7,9 +7,9 @@ To build the site:
 1. git clone https://github.com/BitBalloon/middleman-homepage.git
 2. cd middleman-homepage
 3. bundle install
-4. middleman build
+4. bundle exec middleman build
 
-To run a preview server, follow the same steps but run `middleman` instead of step 4.
+To run a preview server, follow the same steps but run `bundle exec middleman` instead of step 4.
 
 # Deploying to BitBalloon
 
