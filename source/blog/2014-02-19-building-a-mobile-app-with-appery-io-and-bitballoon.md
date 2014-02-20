@@ -10,6 +10,6 @@ image: /images/posts/appery-io-todo-app.png
 
 Max Katz from [Appery.io](http://appery.io/) made an awesome little tutorial showing how to build a todo app with Appery and BitBalloon.
 
-Appery is a cloud-based rapid development environment that helps you create cross-platform apps in HTML5 with a drag and drop app builder.
+Appery.io is a cloud-based rapid development environment that helps you create cross-platform apps in HTML5 with a drag and drop app builder.
 
 <!-- excerpt -->
