@@ -7,7 +7,7 @@ position: 3
 
 ## Redirects and Rewrites
 
-Configuring redirects or rewrites for your BitBalloon site is as easy as adding a file called `_rewrites` to the root directory of your site folder.
+Configuring redirects or rewrites for your BitBalloon site is as easy as adding a file called `_redirects` to the root directory of your site folder.
 
 Setting up basic redirects is dead simple:
 

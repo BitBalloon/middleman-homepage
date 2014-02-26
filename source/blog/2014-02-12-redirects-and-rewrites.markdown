@@ -17,7 +17,7 @@ We've been thinking long and hard about how to let our users do that in a far mo
 
 Today we're really happy to launch our new support for [redirects and rewrite rules](/docs/redirects_and_rewrites).
 
-To configure redirects or rewrites for your site, just make sure your root folder includes a file named `_rewrites`.
+To configure redirects or rewrites for your site, just make sure your root folder includes a file named `_redirects`.
 
 Here's a commented example with a bit of everything thrown in for good meassure:
 
