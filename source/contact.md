@@ -22,3 +22,5 @@ Questions? Comments? Drop us a note!
   </p>
   <button class="radius button" type="submit">Send</button>
 </form>
+
+Don't like contact forms? Mail us at <a href="mailto:team@bitballoon.com">team@bitballoon.com</a>
