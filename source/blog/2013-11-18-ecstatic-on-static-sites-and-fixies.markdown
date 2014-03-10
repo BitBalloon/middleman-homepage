@@ -44,7 +44,7 @@ The fact that there's no PHP splattered throughout the templates, makes working 
 
 For anybody comfortable working directly with text-files, static sites are now generally a better solution than a self-hosted CMS just waiting to blow up during traffic spikes or get hacked if you ever miss out on an update. Dropbox or Github makes it easy to host the source files in the cloud.
 
-This still leaves out the majority of people, without a text editor of choice and with little interest in dealing with text files, but it seems like the next inevitable step is simply a browser-based static site generator with a friendly UI, publishing sites through API's like our [website publishing API](https://www.bitballoon.com/docs/api).
+This still leaves out the majority of people, without a text editor of choice and with little interest in dealing with text files, but it seems like the next inevitable step is simply a browser-based static site generator with a friendly UI, publishing sites through API's like our [website publishing API](https://www.bitballoon.com/api).
 
 _(if you're interested in building something like this as an open source project, get in touch!)_
 
