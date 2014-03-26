@@ -3,7 +3,7 @@ title: "Form Spam Filtering"
 author: Mathias Biilmann
 description: "Get rid of contact form spam. BitBalloon now filters all form submissions."
 image: /images/posts/spam.jpg
-tags: ["Forms", "BitBalloon", "Spam"]
+tags: ["Forms", "BitBalloon", "Spam", "Features"]
 ---
 
 ![Spam](/images/posts/spam.jpg)

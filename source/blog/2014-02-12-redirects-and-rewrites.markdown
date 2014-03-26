@@ -2,7 +2,7 @@
 title: "We can do Better than htaccess: Redirects and Rewrite Rules"
 author: Mathias Biilmann
 description: "Announcing straight forward redirects and rewrite rules for BitBalloon. Much simpler than htaccess"
-tags: ["BitBalloon", "Single Page Apps", "Angular", ""]
+tags: ["BitBalloon", "Single Page Apps", "Angular", "Features"]
 image: /images/posts/redirects.jpg
 ---
 ![Redirects and Rewrite Rules](/images/posts/redirects.jpg)
