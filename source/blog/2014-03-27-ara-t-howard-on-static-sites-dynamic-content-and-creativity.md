@@ -6,15 +6,15 @@ tags: ["BitBalloon", "Middleman", "Interview", "Podcast", "CMS", "Collaboration"
 image: /images/posts/ara-t-howard.png
 ---
 
-Ara T Howard, long time Rubysist and partner at the Boulder Colorado based web agency, Dojo4, explains why using a static site architecture unleashes the creative forces of the agency's front end talent.
+<iframe class="soundcloud-player" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140631507&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
+
+Ara T Howard, long time Rubyist and partner at the Boulder Colorado based web agency, Dojo4, explains why using a static site architecture unleashes the creative forces of the agency's front end talent.
 
 He shares how to use Draftin and Middleman to create a collaborative authoring environment that seamlessly publishes Markdown documents to rendered HTML on BitBalloon.
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/140631507&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-
 <!-- excerpt -->
 
-#### Transcript:
+### Transcript:
 
 **Mike:** Hey everybody I'm Mike Ruescher and I am here with Ara Howard from Dojo4 and this is the BitBalloon podcast where we discuss new ways of developing websites and applications using the static site architecture. So Ara How's it going?
 
@@ -26,11 +26,11 @@ He shares how to use Draftin and Middleman to create a collaborative authoring e
 
 **Mike:** Quite the range there. Sounds like your no strangers to building fully dynamic web properties.
 
-**Ara:** No. Absolutely not. I've been a Ruby developer since Ruby 1.4 maybe even a little bit before then, long before rails was on the scene and you know at that point, I was building a lot of dynamic web applications for NOAA through the Co-operative Institute for Research and Sciences and we were doing. So at that point it was mainly CGI applications but also some really, really sophisticated java applications using old school MPM-CGI which is new school kids call that Server push. But yeah, I've been building dynamic data-driven web applications for, I'm embarrassed to say, probably more than 15 years at this point.
+**Ara:** No. Absolutely not. I've been a Ruby developer since Ruby 1.4 maybe even a little bit before then, long before rails was on the scene and you know at that point, I was building a lot of dynamic web applications for NOAA through the Co-operative Institute for Research and Sciences and we were doing — so at that point it was mainly CGI applications but also some really, really sophisticated java applications using old school MPM-CGI which is new school kids call that Server push. But yeah, I've been building dynamic data-driven web applications for, I'm embarrassed to say, probably more than 15 years at this point.
 
 **Mike:** So, you started this Dojo4 about 5 years ago?
 
-**Ara:** Yeah. At the time I became a partner in Dojo4, I had an LLC codeforpeople and a lot of people know that name from the Ruby world, is 200 gems, definitely way more than 150 gems in the Ruby community at this point, so that was my former consultancy and then that company and myself along with a few other individuals came together to do something a little bit bigger than just doing rails work including design and production work, copyrighting and interface design.
+**Ara:** Yeah. At the time I became a partner in Dojo4, I had an LLC codeforpeople and a lot of people know that name from the Ruby world, it's 200 gems, definitely way more than 150 gems in the Ruby community at this point, so that was my former consultancy and then that company and myself along with a few other individuals came together to do something a little bit bigger than just doing rails work including design and production work, copyrighting and interface design.
 
 **Mike:** Integrating vertically.
 
@@ -96,21 +96,21 @@ So I went back to the drawing board and I had been looking at BitBalloon for a w
 
 **Mike:** I think half of our job is avoiding bunny trails.
 
-**Ara:** Yes exactly. And so where we're at now our new site, I've been talking to Steve one of our really talented engineers and  it just happened like one day, I said you know what let's rebuild the whole site in static and about 48 hrs later we were done. We took the rails site and we designed, implemeted and deployed an entirely new infrastructure that is based on BitBallon, a webhook and the Draftin editing service, and middleman. And so from the beginning the site is a middleman site and it doesn't matter what site generator you would use. You might use docpad or there's a variety of really great site generators but we have a site generator and all our content is checked into github so we started there.
+**Ara:** Yes exactly. And so where we're at now our new site, I've been talking to Steve one of our really talented engineers and  it just happened like one day, I said you know what let's rebuild the whole site in static and about 48 hrs later we were done. We took the rails site and we designed, implemeted and deployed an entirely new infrastructure that is based on BitBalloon, a webhook and the Draftin editing service, and middleman. And so from the beginning the site is a middleman site and it doesn't matter what site generator you would use. You might use docpad or there's a variety of really great site generators but we have a site generator and all our content is checked into github so we started there.
 
-Here is a website, a very easy, a very well factored website but data-driven and all static entirely contained in github. And so then we needed to move on to like how do we deploy it. And so we made the deployment we went to bitballon. That was not a lot of work.
+Here is a website, a very easy, a very well factored website but data-driven and all static entirely contained in github. And so then we needed to move on to like how do we deploy it. And so we made the deployment we went to bitballoon. That was not a lot of work.
 
-We compared our Rails site being served from Apache to one being served from BitBallon, same content. Our Google page rank jumped from a 35 to like a 88, just with no work!
+We compared our Rails site being served from Apache to one being served from BitBalloon, same content. Our Google page rank jumped from a 35 to like a 88, just with no work!
 
 **Mike:** That's awesome.
 
-**Ara:** Yeah, it was really beautiful. We were able to take sprockets out of the entire thing. That's something the BitBallon does for you. It's sprockets as a service, we are like screw compressing images and CSS and we don't even want to think about it also, like not our problem like why do we care about this.
+**Ara:** Yeah, it was really beautiful. We were able to take sprockets out of the entire thing. That's something the BitBalloon does for you. It's sprockets as a service, we are like screw compressing images and CSS and we don't even want to think about it also, like not our problem like why do we care about this.
 
 **Mike:** Absolutely, why does everyone have to re-invent the wheel there, right.
 
 **Ara:** Yeah, and I mean, sprocket's is a good tool chain, but again I've spent many, many days of my life debugging asset compilation issues on developers boxes and to the extent that sometimes I'll avoid using the tool chain for small things.
 
-Its just not important enough, so in any case although I'll will say its gotten much better. so we have this static website, its written in middleman, its all in github and it can deploy to bitballon.
+Its just not important enough, so in any case although I'll will say its gotten much better. so we have this static website, its written in middleman, its all in github and it can deploy to bitballoon.
 
 And so now we're in a position where the front end guys can iterate very, very quickly. They're just able to churn out new features. Like we had a St. Patrick Day version of the site took a few minutes to make the tweaks, deploy, great. The hosting is super robust, it's super fast, it takes out a whole bunch of complexity. CDN invalidation, asset magnification.
 
@@ -136,7 +136,7 @@ But if you think how would I lay out the data with relative assets for those blo
 
 **Mike:** Pulling in dependencies?
 
-**Ara:** Yeah, I mean basically the middleman site generator it's linear, its primarily  a single threaded, it could be much faster, I guess is all I'm saying. But some site generators are faster. There's a lot of competitors in that space right now.  But in any case we generate the site and then user just gets a couple of emails, some robots check in their content, there bit of content and push it to to BitBallon, So that gives us all the properties that i was looking for which is the thing is super easy to tweak for the people who tweak websites. Which is front end engineers. They can hack with impunity because they can preview locally or they can review the site in any way, shape or form, right anything can serve static HTML, they have no barrier to playing because there's no fear that lets just say what they did is oh my gosh you're crying over the MO data and it an N+1 query, so you just make the build take a minute longer. Well that's not ideal but who cares. This isn't happening in real time or you know one of those pages goes boom, but it doesn't take the app down. if when we build it doesn't work, but it's not an error that the enduser is going to see a 500 of a website for example. So they don't have to worry about database layers, asset pipe lines any of ths they basically have a site generator, they have data, its all HTML, CSS and Javascript and that's it.
+**Ara:** Yeah, I mean basically the middleman site generator it's linear, its primarily  a single threaded, it could be much faster, I guess is all I'm saying. But some site generators are faster. There's a lot of competitors in that space right now.  But in any case we generate the site and then user just gets a couple of emails, some robots check in their content, there bit of content and push it to to BitBalloon, So that gives us all the properties that i was looking for which is the thing is super easy to tweak for the people who tweak websites. Which is front end engineers. They can hack with impunity because they can preview locally or they can review the site in any way, shape or form, right anything can serve static HTML, they have no barrier to playing because there's no fear that lets just say what they did is oh my gosh you're crying over the MO data and it an N+1 query, so you just make the build take a minute longer. Well that's not ideal but who cares. This isn't happening in real time or you know one of those pages goes boom, but it doesn't take the app down. if when we build it doesn't work, but it's not an error that the enduser is going to see a 500 of a website for example. So they don't have to worry about database layers, asset pipe lines any of ths they basically have a site generator, they have data, its all HTML, CSS and Javascript and that's it.
 
 **Mike:** If only what it meant when it's a what you see is what you get.
 
@@ -158,7 +158,7 @@ If I tarred up that content and there's other content-type in there too, people 
 
 **Ara:** Yeah, and then it's not, if you asked a hundred developers to lay out a directory hierarchy of content for website, 99 of them would do it this way. So keeping it plain text and portable, that's another, that also sort of the composable idea that you're talking about right?
 
-I should be able to take this content and do something else. Write it, script it, takes our blog and publishes it as a book. Which is something done for clients for example. So that's true and then finally just using BitBallon to solve the asset compilation, CDN, hosting, HA, speed problem for us, I don't even remember what you guys charged, it's like so cheap, I've forgotten because It doesn't matter to me.
+I should be able to take this content and do something else. Write it, script it, takes our blog and publishes it as a book. Which is something done for clients for example. So that's true and then finally just using BitBalloon to solve the asset compilation, CDN, hosting, HA, speed problem for us, I don't even remember what you guys charged, it's like so cheap, I've forgotten because It doesn't matter to me.
 
 **Mike:** We appreciate your enthusiasm on that!
 
