@@ -30,7 +30,7 @@ He shares how to use Draftin and Middleman to create a collaborative authoring e
 
 **Mike:** So, you started this Dojo4 about 5 years ago?
 
-**Ara:** Yeah. At the time I became a partner in Dojo4, I had an LLC codeforpeople and a lot of people know that name from the Ruby world, it's 200 gems, definitely way more than 150 gems in the Ruby community at this point, so that was my former consultancy and then that company and myself along with a few other individuals came together to do something a little bit bigger than just doing rails work including design and production work, copyrighting and interface design.
+**Ara:** Yeah. At the time I became a partner in Dojo4, I had an LLC codeforpeople and a lot of people know that name from the Ruby world, it's 200 gems, definitely way more than 150 gems in the Ruby community at this point, so that was my former consultancy and then that company and myself along with a few other individuals came together to do something a little bit bigger than just doing rails work including design and production work, copywriting and interface design.
 
 **Mike:** Integrating vertically.
 
