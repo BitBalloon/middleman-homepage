@@ -20,11 +20,11 @@ He shares how to use Draftin and Middleman to create a collaborative authoring e
 
 **Ara:** It's going great. Launching some sites today.
 
-**Mike:** Okay. Try to stick to the point then. So you can get back to launching stuff. You guys are out in Boulder, Colorado, right.
+**Mike:** Okay. I'll try to stick to the point then so you can get back to launching stuff! You guys are out in Boulder, Colorado, right?
 
 **Ara:** Yeah, Dojo4, we're a creative technology agency that's located in downtown Boulder. We've been working here as the agency for about five years, although the founders worked together in some fashion for a number of years before that. And so we're really fortunate to be right in the middle of what we like to call start-up alley here in Boulder and we get to do a lot of fun stuff. Everything from website to native apps, to Rails applications, to massive like cloud infrastructure, so yeah.
 
-**Mike:** Quite the range there. Sounds like your no strangers to building fully dynamic web properties.
+**Mike:** Quite the range there. Sounds like you're no strangers to building fully dynamic web properties.
 
 **Ara:** No. Absolutely not. I've been a Ruby developer since Ruby 1.4 maybe even a little bit before then, long before rails was on the scene and you know at that point, I was building a lot of dynamic web applications for NOAA through the Co-operative Institute for Research and Sciences and we were doing — so at that point it was mainly CGI applications but also some really, really sophisticated java applications using old school MPM-CGI which is new school kids call that Server push. But yeah, I've been building dynamic data-driven web applications for, I'm embarrassed to say, probably more than 15 years at this point.
 
