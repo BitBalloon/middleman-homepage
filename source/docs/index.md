@@ -1,68 +1,83 @@
 ---
 layout: docs
-title: Getting Started
+title: The Basics
 position: 1
 ---
 
-## Getting Started
+## The Basics
 
-Below you'll find guides and reference documentation about the BitBalloon platform.
-<hr/>
+BitBalloon deploys static sites from your local development into production in a single "site aware" step. When you deploy a site, BitBalloon automatically optimizes all the CSS, JavaScript & images your site references.
 
-<div class="large-6 columns text-center">
-  <a href="/docs/basics" class="no-link-style">
-    <i class="icon-site-upload big-docs-icon"></i>
-  </a>
-  <h4>For your site</h4>
-  <p>Deploy your site with BitBalloon & integrate other services. <a href="/docs/basics">Learn more &raquo;</a></p>
-</div>
+It also sets up a database to process any submissions to forms in your HTML.
 
-<div class="large-6 columns text-center">
-  <a href="/partner" class="no-link-style">
-    <i class="icon-tools big-docs-icon"></i>
-  </a>
-  <h4>In your App</h4>
-  <p>Integrate easy web publishing into your own applications. <a href="/partner">Learn more &raquo;</a></p>
-</div>
+There are two ways to deploy a site:
 
-<hr/>
+ 1. Drag it onto a drop-zone
+ 2. Make a call to the API
+
+When a site is first deployed, a public URL is generated for it. Here's the url of our demo site: [http://cowboy-system-73843.bitballoon.com](http://cowboy-system-73843.bitballoon.com)
 
 
-#### Need help?
+### The Dashboard
 
-We're always happy to help out with code or any questions you might have. <a href="#contact" data-reveal-id="contact" >Just Ask &raquo;</a>
+Every site has its own dashboard which can be accessed from a url similar to:
+https://www.bitballoon.com/sites/cowboy-system-73843
+
+It provides tools for managing various aspects of your site, such as:
+
+* deploys
+* site name
+* custom domain
+* form submissions
+* password protection
+* footer code snippets
 
 
-#### Mailing List
+<a name="form-handling"/></a>
+### Form Handling
 
-Join the mailing list to keep up to date on new features. <a href="#mailing-signup" data-reveal-id="mailing-signup" >Sign Up &raquo;</a>
+Here's an example of a regular web form that will automatically work on BitBalloon.
 
-<div id="mailing-signup" class="reveal-modal small">
 
-  <div class="mailchimp-form large-12 columns">
-    <h3>Join the mailing list</h3>
-    <!-- Begin MailChimp Signup Form -->
-    <div id="mc_embed_signup">
-      <form action="http://webpop.us2.list-manage1.com/subscribe/post?u=3ca88a0cd26d026e590224d67&amp;id=e52baf3348" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-      <div class="mc-field-group">
-        <label for="mce-EMAIL">Email Address</label>
-        <div class="row collapse">
-          <div class="large-8 columns">
-            <div class="small-10 columns">
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" autofocus="autofocus">
-            </div>
-          </div>
-          <div class="small-8 columns">
-            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
-          </div>
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>
-        </div>
-      </div>
-      </form>
-    </div>
-  </div>
+```html
+<form name="signup" action="thank-you.html">
+  First Name: <input type="text" name="first_name">
+  Email: <input type="email" name="email">
+  <button>Sign me up</button>
+</form>
+```
 
-</div>
+The <strong>name</strong> attributes on the form and input tags tell the database how to label the data.
+
+The <strong>action</strong> attribute on the form tag specifies a url path to show a custom success page when the form is submitted. Use a full path with a .html suffix file to easily test out your form success page in local development. When you deploy the site, BitBalloon will automatically "prettify" the url.
+
+If the form action is left blank, or the html page you are pointing it to does not exist, a default BitBalloon form success page will be shown.
+
+Form submissions are accessible from the "Forms" tab in your site dashboard. Here you can also setup email notifications and export the form submissions as a .csv file.
+
+As with every other BitBalloons feature, form submissions are accessible from the <a href="https://github.com/BitBalloon/bitballoon-api">API</a>. Checkout our <a href="/docs/zapier">Zapier integration</a> to connect your BitBalloon forms to hundreds of useful cloud services without doing any programming!
+
+
+### Custom 404 Pages
+
+To configure a custom 404 page, just make sure your site folder has a file called `404.html` in the root. This page will be used whenever there's a page not found.
+
+
+### Redirects and Rewrite Rules
+
+You can configure redirects and rewrite rules by adding a `_redirects` file in the root of your site folder. The simplest possible `_redirects` file is just a list of redirects like this:
+
+/news /blog
+/some/old/url /the/new/url
+
+Read the [Redirects and Rewrite Rules](/docs/redirects_and_rewrites) guide for all the details on what the `_redirects` can do.
+
+
+### Snippets
+
+Code snippets can be injected into the footer of every page of a site. The snippets can be premade templates for popular 3rd party scripts like Google Analytics or your own custom code.
+
+
+### Versions
+
+Every time a site is updated, a new version is created. The "Versions" tab in your site dashboard lets you view and rollback to any version, anytime.

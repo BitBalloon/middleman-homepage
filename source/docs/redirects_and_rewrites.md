@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Redirects
-position: 3
+position: 4
 ---
 
 
@@ -42,7 +42,7 @@ You can use placeholders in the origin and target paths:
 This would redirect a url like `/news/2004/02/12/my-story` to `/blog/2004/02/12/my-story`
 
 
-### Splats 
+### Splats
 
 An asterisk indicates a **splat** that will match anything that follows:
 
