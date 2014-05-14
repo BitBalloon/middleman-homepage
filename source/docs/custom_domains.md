@@ -20,7 +20,7 @@ You can also use any 3rd party domain registrant. If you prefer this option, we 
 
 ### Using an Existing Domain
 
-To use an existing domain with BitBalloon, go to your site in the BitBalloon backend and click "Edit Domain", type in the domain you want your site on and click "Next".
+To use an existing domain with BitBalloon, go to your site in the BitBalloon backend and click "Edit Domain", type in the domain you want for your site on and click "Next".
 
 * Create a CNAME that will "alias" your site to "www.bitballoon.com". If your domain is example.com, you might alias www.example.com to www.bitballoon.com.
 * Create an A record for the raw domain (example.com) pointing to 198.61.251.14
