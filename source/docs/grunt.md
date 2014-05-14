@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Grunt
-position: 3
+position: 4
 ---
 
 ## Using BitBalloon with Grunt

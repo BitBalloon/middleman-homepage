@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Redirects
-position: 4
+position: 3
 ---
 
 
