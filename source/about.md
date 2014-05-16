@@ -37,4 +37,4 @@ Deploying optimized sites and apps should be fun & simple instead of unnecessari
 
 ### Who are you guys?
 
-BitBalloon is brought to you by the team behind [Webpop](http://www.webpop.com), a cloud based platform for developing dynamic websites. We created BitBalloon to provide a focused solution for situations where a static site or app makes more sense.
+BitBalloon is brought to you by [MakerLoop Inc](http://www.makerloop.com). We're the team behind [Webpop](http://www.webpop.com), a cloud based platform for developing dynamic websites. We created BitBalloon to provide a focused solution for situations where a static site or app makes more sense.
