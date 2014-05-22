@@ -2,7 +2,7 @@
 title: "Grunt BitBalloon Deploy Task"
 author: Mathias Biilmann Christensen
 description: "The grunt-bitballoon plugin lets you add a bitballoon deploy task to your Gruntfile."
-tags: ["Grunt", "Continuous Deployment"]
+tags: ["Grunt", "Continuous Deployment", "Plugins"]
 image: /images/posts/grunt-logo.png
 ---
 
