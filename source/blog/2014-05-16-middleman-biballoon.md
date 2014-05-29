@@ -6,7 +6,7 @@ tags: ["Middleman", "Static Site Generators", "Plugins"]
 image: /images/posts/middleman.png
 ---
 
-![Grunt Logo](/images/posts/middleman.png)
+![Middleman Logo](/images/posts/middleman.png)
 
 [Middleman](http://middlemanapp.com/) is one of our favorite static site generators here at BitBalloon.
 
