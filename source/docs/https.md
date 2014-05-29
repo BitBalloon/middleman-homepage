@@ -15,10 +15,10 @@ Using HTTPS gives your users a guarantee that the website they see on their brow
 
 Today it's common to browse through untrusted Wi-Fi connections at coffee-shops, airports, etc, where a so called "man in the middle" can all to easily manipulate and collect the data you are viewing.
 
-In more bening cases this is quite often abused to inject foreign ads into websites. As a website publisher it's in your interest to make sure that what your users see is really what you intended it to be,
+In more benign cases this is quite often abused to inject foreign ads into websites. As a website publisher it's in your interest to make sure that what your users see is really what you intended it to be,
 without any slow-loading ads or banners to degrade the experience and reflect badly on your brand.
 
-In less bening cases 3rd parties might swap out links to 3rd party scripts like Stripe or Facebook Connect with their own fishing widgets.
+In less benign cases 3rd parties might swap out links to 3rd party scripts like Stripe or Facebook Connect with their own fishing widgets.
 
 HTTPS protects your site against any kind of tampering, and seeing the green lock in their browser can give users a higher sense of trust in your website.
 
