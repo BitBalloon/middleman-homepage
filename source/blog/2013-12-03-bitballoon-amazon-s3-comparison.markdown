@@ -34,6 +34,21 @@ Here's Pingdoms performance test running against the exact same site folder uplo
 * <a href="http://tools.pingdom.com/fpt/#!/bfDfyO/http://speedtestsite.s3-website-us-east-1.amazonaws.com/" target="_blank">The test site on S3</a>
 * <a href="http://tools.pingdom.com/fpt/#!/7iV4p/speedtest.bitballoon.com" target="_blank">The test site on BitBalloon</a>
 
+### HTTPS
+
+If you want HTTPS support for an S3 hosted site you'll need to configure Cloudfront for your site as well. Then you can supply your own certificate and go for one of two options:
+
+* SNI based HTTPS. Cheap, but won't work in IE on Windows XP, older Android browsers and some feedreaders, crawlers, etc
+* Dedicated IP SSL. Costs $600/month.
+
+BitBalloon's HTTPs always works in all browsers by using a hybrid model. When you activate HTTPS for a BitBalloon site, we'll provision and install a certificate for your domain and use this for all browsers that support SNI. Browsers with no SNI support will fall back to a certificate shared between multiple customers.
+
+
+### Atomic Deploys
+
+S3 doesn’t do atomic deploys. So typically if you deploy a new version of the site there'll be a time where the site is in a half-deployed state with old and new assets mixed together. If you run into a connetion issue in the middle of a deploy, your site can end up in an inconsistent state. With BitBalloon no part of a deploy ever goes live before all the files in the deploy have been uploaded and processed.
+
+
 ### Vary: Accept-Encoding HTTP header
 
 S3 also does not provide proper support for the Vary: Accept-Encoding HTTP header. So for mobile sites (or sites supporting older browsers) you might find that serving gzipped content in that setting is more trouble than it's worth.
@@ -42,9 +57,6 @@ BitBalloon automatically creates a gzipped version of everything and supports th
 
 When using S3 for static sites, you’ll have to decide whether to serve gzipped or plain text content to all browsers, regardless of gzip support. You’ll also have to do the gzipping up front if you chose to serve the compressed version.
 
-### Atomic Deploys
-
-S3 doesn’t do atomic deploys. So typically if you deploy a new version of the site there'll be a time where the site is in a half-deployed state with old and new assets mixed together. With BitBalloon no part of a deploy ever goes live before all the files in the deploy have been uploaded and processed.
 
 ### Build Automation
 
