@@ -60,7 +60,7 @@ Pick GitHub as your provider and select the repository with your Middleman site.
 Pick **Ruby** from the **Select your technology to prepopulate basic commands** dropdown. Then Modify your test command to:
 
 ```bash
-bundle exec middleman
+bundle exec middleman build
 ```
 
 Instead of clicking the big green "Save and go to dashboard" button, follow the "save and continue your setup" link. Select the **Master** branch of your repository and then make sure to pick the **$script** option.
@@ -78,7 +78,3 @@ Replace the access token and site id with the values from your **.bitballoon** f
 It can all be done in just a few minutes and this flow will serve you all the way from prototyping till a production site with millions of visitors.
 
 ![Step 3 - Success](/images/posts/codeship-success.png)
-
-
-
-
