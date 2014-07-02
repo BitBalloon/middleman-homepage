@@ -57,6 +57,11 @@ pre {
     padding: .7em 1em .5em;
   }
 }
+
+iframe {
+  max-width: 100%;
+}
+
 .prettyprint {
   margin-bottom: 26px;
   line-height: 1.2;
@@ -476,5 +481,3 @@ header {
     padding: 20px 40px;
   }
 }
-
-

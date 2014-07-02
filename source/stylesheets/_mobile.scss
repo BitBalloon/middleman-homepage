@@ -68,6 +68,7 @@
   }
 
   header nav .navlink { display: none !important; }
+  header .main-nav { float: none !important; }
 
   .project-card .date, .project-card .status {
     font-size: 10px;
@@ -105,6 +106,7 @@
 
 @media #{$small} {
   header nav .navlink { display: none !important; }
+  header .main-nav { float: none !important; }
   body { padding: 0 }
   .main { padding: 0; margin: 0; }
   .sheet{
@@ -164,6 +166,3 @@
   }
 
 }
-
-
-
