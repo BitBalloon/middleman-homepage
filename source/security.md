@@ -71,8 +71,8 @@ u7/nPUY06QvbieL2kOOCIqZX+iE=
 
 In your disclosure, please include a description and potential impact, steps to reproduce the issue or a proof of concept and a name and link for attribution (if desired).
 
-Thank you for helping us keep the BitBalloon a safe place!
-
 ## Security Researchers
 
-* Len Mark
+* Aditya Agrawal - [@exploitprotocol](https://twitter.com/exploitprotocol)
+
+Thank you for helping us keep BitBalloon a safe place!
