@@ -1,5 +1,5 @@
 ---
-title: "Download Version Controlled Deployes"
+title: "Download Your Old Deploys"
 author: Mathias Biilmann Christensen
 description: "BitBalloon lets you download any deploy you've any done from our version control system whenever you want."
 tags: ["BitBalloon", "Version Control", "Features"]
