@@ -2,7 +2,7 @@
 title: "The Middleman BitBalloon Extension"
 author: Mathias Biilmann Christensen
 description: "Deploy your Middleman built site to BitBalloon with the middleman-bitballoon plugin"
-tags: ["Middleman", "Static Site Generators", "Plugins"]
+tags: ["Middleman", "Static Site Generators", "Plugins", "Continuous Deployment"]
 image: /images/posts/middleman.png
 ---
 

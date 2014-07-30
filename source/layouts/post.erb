@@ -21,6 +21,28 @@
 
               <%= yield %>
 
+              <% if current_page.data.tags && current_page.data.tags.include?("Continuous Deployment") %>
+                <br/>
+                <div class="panel">
+                    <h3>Interested in Continuous Deployment?</h3>
+                    <p>
+                      Get in touch, and Mathias from BitBalloon will help you setup
+                      Continuous Deployment for your <a href="https://www.staticgen.com" target="_blank">static site generator</a> of choice!
+                    </p>
+                    <form accept-charset="UTF-8" name="continuous_deployment" method="post">
+                      <p>
+                        <label>Your Name</label>
+                        <input name="name" type="text" required>
+                      </p>
+                      <p>
+                        <label>Your Email</label>
+                        <input name="email" type="email" required>
+                      </p>
+                      <button class="radius button" type="submit">Help me get started!</button>
+                    </form>
+                </div>
+              <% end %>
+
               <hr class="extra-space"/>
             </div>
 
