@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: HTTPS
-position: 5
+position: 7
 ---
 
 ## HTTPS with BitBalloon
