@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Zapier
-position: 6
+position: 8
 ---
 
 ## Zapier Integration
