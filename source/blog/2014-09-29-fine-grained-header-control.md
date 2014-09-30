@@ -3,7 +3,7 @@ title: "Fine Grained HTTP Header Control & Basic Auth"
 author: Mathias Biilmann Christensen
 description: "BitBalloon now lets you take control over the HTTP headers for your site, including Basic Authentication"
 tags: ["BitBalloon", "Features", "Headers", "Authentication"]
-image: /images/posts/policeman.svg
+image: /images/posts/policeman.png
 ---
 
 ![Basic Auth](/images/posts/policeman.svg)
