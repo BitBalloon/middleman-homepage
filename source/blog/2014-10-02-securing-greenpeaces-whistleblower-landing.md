@@ -14,6 +14,8 @@ It turned out they were just about to launch an exciting new project with securi
 
 The project is called [SafeSource](https://www.safesource.org.nz/), and it allows anyone with important information relating to illegal activity, corruption, poor governance and mismanagement in business or government to safely and securely blow the whistle.
 
+<!-- excerpt -->
+
 It's based on [Aaron Swartz's SecureDrop software](https://pressfreedomfoundation.org/securedrop) and the actual application runs on Greenpeace's own infrastructure and is only accessible via [Tor](https://www.torproject.org/).
 
 The public website for the project, however, now runs on BitBalloon.
