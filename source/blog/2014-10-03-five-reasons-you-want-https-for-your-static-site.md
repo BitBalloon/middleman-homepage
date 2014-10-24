@@ -32,7 +32,7 @@ We all wan't to know where our visitors comes from. Being able to dive into our 
 
 Browsers, however, won't send the important "Referer" header when a user follows a link from a HTTPS site to a plain HTTP site. As more and more sites starts forcing HTTPS this becomes a larger and larger problem for site owners without HTTPS enabled.
 
-If a you got an inbound link from [HackerNews](https://news.ycombinator.com) and your site is not HTTPS, you won't see see Hacker News as a traffic source at all in your Analytics, since Hacker News forced HTTPS. Wan't to know the bounce rate from the Hacker News audience? Touch luck unless you run HTTPS.
+If a you got an inbound link from [HackerNews](https://news.ycombinator.com) and your site is not HTTPS, you won't see see Hacker News as a traffic source at all in your Analytics, since Hacker News forced HTTPS. Wan't to know the bounce rate from the Hacker News audience? Tough luck unless you run HTTPS.
 
 Same goes for any other traffic source enforcing HTTPS and there are more of those every day.
 
@@ -43,7 +43,7 @@ Last month Comcast received a lot of flak when people found out they were [injec
 
 They're not the first, and they won't be the last, to tamper with traffic over public networks. As a website owner, having other companies inject ads into your site is a disaster. Ads on a company site makes you seem cheap and can seriously hurt the first impression you make on your users.
 
-HTTPS means all the traffic between your site and your users is sent over an encrypted connection, and no-one can tamper with the source of your site. So by enabling HTTPS you're getting a guarantee that what your users see is really what you intended.
+HTTPS means all the traffic between your site and your users is sent over an encrypted connection, and no-one can tamper with the source code of your site. So by enabling HTTPS you're getting a guarantee that what your users see is really what you intended.
 
 ## 4. Protect your users
 
