@@ -3,8 +3,10 @@ title: "Five Reasons you want HTTPS for your Static site"
 author: Mathias Biilmann Christensen
 description: "HTTPS is not just for E-commerce sites. Here's five reasons you should invest in HTTPS for your static site today."
 tags: ["Security", "BitBalloon", "HTTPS"]
-image: /images/posts/safesource.png
+image: /images/posts/lock.jpg
 ---
+
+![SafeSource](/images/posts/lock.jpg)
 
 > "Does HTTPS really make any sense for a static web site?"
 
@@ -59,4 +61,4 @@ Because of this browser vendors are starting to consider only granting these per
 
 The new, incredibly interesting, Service Workers spec explicitly limits support to HTTPS origins and there's talks about moving in that direction for some existing browser features like geolocation.
 
-So if you want to take full advantage of the power of modern browsers, you'll want to enable HTTPS for your sites.
+So if you want to take full advantage of the power of modern browsers, you might have to enable HTTPS for your sites.

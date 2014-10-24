@@ -182,6 +182,22 @@ article + article {
   text-shadow: 2px 2px rgba(0,0,0,0.2);
 }
 
+.page-header {
+  margin-bottom: 50px;
+  h1, h2 {
+    margin-bottom: 0;
+  }
+}
+
+.screenshot {
+  display: block;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  img { display: block; }
+}
+
 .button {
   box-shadow: none;
   padding: 9px 15px 7px;
