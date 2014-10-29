@@ -1,0 +1,23 @@
+<div class="main showcase">
+  <div class="row">
+    <div class="large-12-columns">
+      <div class="page-header text-center">
+        <h1>Showcase</h1>
+        <h3 class="subheader">Sites in the wild deployed on BitBalloon</h3>
+      </div>
+      <ul class="small-block-grid-1 large-block-grid-3">
+        <% sitemap.where({approved: true}).all.find_all {|r| r.path.match /^showcase\// }.each do |example| %>
+          <li>
+            <a href="<%= example.data.url %>" class="screenshot">
+              <div class="thumbnail">
+                <img src="<%= example.path.sub(/html/,'jpg') %>">
+                <div class="description"><%= example.render(:layout => false) %></div>
+              </div>
+              <h4 class="text-center"><%= example.data.title %></h4>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -133,6 +133,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 #reasons {
+  margin: 90px 0 60px;
   .hosting-partners {
     img { position: relative; top: -.5em }
   }
@@ -156,6 +157,7 @@
     color: rgb(255, 255, 255);
     border-radius: 100%;
     display: block;
+    margin: 0 auto;
     text-align: center;
     font-size: 70px;
     width: 130px;
@@ -165,18 +167,7 @@
     box-shadow: 0 0 0 7px rgb(223, 236, 255);
     background-image: radial-gradient(at 65% 55%, rgb(44, 166, 248) 0%, rgb(37, 83, 189) 150%);
   }
-  .icon-code {
-    margin: .7em auto .9em;
-  }
-  .icon-form {
-    margin: .5em auto 0.7em;
-  }
-  .icon-cogs {
-    margin: .75em auto 1em;
-  }
-  .icon-dna {
-    margin: 0.45em auto 0.65em;
-  }
+
 
   pre {
     float: left;
