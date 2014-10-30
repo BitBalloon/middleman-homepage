@@ -17,7 +17,6 @@
     margin-top: 0.8em;
     font-size: 2.5em;
   }
-
 }
 
 @media #{$medium-small} {
@@ -100,6 +99,10 @@
     }
   }
 
+  .screenshot .description {
+    font-size: 12px;
+    p { font-size: 12px; }
+  }
 }
 
 
@@ -166,5 +169,16 @@
       font-size: 1em;
     }
   }
-
+  .screenshot {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .screenshot .description {
+    bottom: 0;
+    background: rgba(0,0,0,0.85);
+    font-size: 12px;
+    p {
+      font-size: 12px;
+    }
+  }
 }
