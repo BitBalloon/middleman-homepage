@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Commandline
-position: 4
+position: 5
 ---
 
 ## Command Line Utility

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Gulp
-position: 6
+position: 7
 ---
 
 ## Using BitBalloon with Gulp
