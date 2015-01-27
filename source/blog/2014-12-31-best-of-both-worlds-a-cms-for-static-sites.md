@@ -2,8 +2,9 @@
 title: "Best of Both Worlds: A CMS for Static Sites"
 author: Mathias Biilmann Christensen
 description: "Lightning fast static sites with a powerful CMS: it's the best of both worlds!"
-tags: null
+tags: []
 image: /images/posts/logo-dark.png
+published: false
 ---
 
 What if you could get the best of both worlds?

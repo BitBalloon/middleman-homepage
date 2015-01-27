@@ -1,5 +1,5 @@
 repo: BitBalloon/middleman-homepage
-branch: master
+branch: cms
 collections:
   - slug: "posts"
     label: "Blog Post"
@@ -12,6 +12,7 @@ collections:
       - {label: "Tags", name: "tags", widget: "tags"}
       - {label: "Image", name: "image", widget: "image", folder: "images/posts"}
       - {label: "Post Body", name: "body", widget: "markdown"}
+      - {label: "Published", name: "published", widget: "checkbox", default: true}
   - slug: "docs"
     label: "Doc Page"
     create: true
