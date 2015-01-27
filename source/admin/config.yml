@@ -1,5 +1,5 @@
 repo: BitBalloon/middleman-homepage
-branch: cms
+branch: master
 collections:
   - slug: "posts"
     label: "Blog Post"
