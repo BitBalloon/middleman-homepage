@@ -1,8 +1,13 @@
 ---
-title: "Building a Mobile Todo App with Appery.io and BitBalloon"
+title: Building a Mobile Todo App with Appery.io and BitBalloon
 author: Mathias Biilmann
-description: "In this video Max Katz from Appery.io shows how to build a todo app with appery.io and BitBalloon"
-tags: ["BitBalloon", "Single Page Apps", "BaaS", "Tutorial", "Appery"]
+description: In this video Max Katz from Appery.io shows how to build a todo app with appery.io and BitBalloon
+tags:
+  - BitBalloon
+  - Single Page Apps
+  - BaaS
+  - Tutorial
+  - Appery
 image: /images/posts/appery-io-todo-app.png
 ---
 
