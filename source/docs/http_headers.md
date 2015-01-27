@@ -1,12 +1,12 @@
 ---
-layout: docs
 title: HTTP Headers
 position: 4
+layout: docs
 ---
 
 ## Headers & Basic Auth
 
-You can configure custom headers and basic auth for your Netlify site by adding a `_headers` file to the root of your site folder.
+You can configure custom headers and basic auth for your BitBalloon site by adding a `_headers` file to the root of your site folder.
 
 ### Custom headers
 
