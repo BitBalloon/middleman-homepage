@@ -1,5 +1,0 @@
-{
-  "posts": <%= blog.articles.map {|a| {
-    :title => a.title, :slug => a.url.split("/").pop, :description => a.data.description
-  }}.to_json %>
-}

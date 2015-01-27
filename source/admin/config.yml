@@ -1,14 +1,23 @@
 repo: BitBalloon/middleman-homepage
-branch: cms
-source_folder: "source"
+branch: master
 collections:
   - slug: "posts"
-    label: "Blog Posts"
+    label: "Blog Post"
     create: true
-    folder: "blog"
+    folder: "source/blog"
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h2", class: "entry-title text-center"}
       - {label: "Author", name: "author", widget: "string", tagname: "p", class: "entry-meta"}
       - {label: "Description", name: "description", widget: "string", tagname: "p"}
       - {label: "Tags", name: "tags", widget: "tags"}
+      - {label: "Image", name: "image", widget: "image", folder: "images/posts"}
       - {label: "Post Body", name: "body", widget: "markdown"}
+  - slug: "docs"
+    label: "Doc Page"
+    create: true
+    folder: "source/docs"
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h2"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {name: "layout", widget: "hidden", default: "docs"}
+      - {label: "Body", name: "body", widget: "markdown"}

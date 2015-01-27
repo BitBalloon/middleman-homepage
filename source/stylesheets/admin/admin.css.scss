@@ -1,0 +1,22 @@
+.cms-preview img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;  
+}
+
+.cms-entry-title, .cms-action-title, .cms-collection-title {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.cms-form-title {
+  border-bottom: 1px solid;
+  padding-bottom: 25px;
+}
+
+.cms-subtitle {
+  color: #444;
+  margin-bottom: 30px;
+  font-weight: normal;
+}

@@ -1,0 +1,76 @@
+---
+layout: false
+---
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Timespace CMS</title>
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="<%= cmsBase %>/assets/cms.css" />
+  <%= stylesheet_link_tag 'site' %>
+  <%= stylesheet_link_tag 'admin/admin' %>
+
+   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <base href="/admin/">
+</head>
+<body>
+
+  <script type="text/x-handlebars" data-template-name='cms/application'>
+  <header>
+    <div class="row">
+      <div class="large-5 medium-7 columns">
+        <h1 class="brand"><i class="icon-balloon"></i><a href="/"><img class="logo" src="/images/bitballoon-logo.svg" alt="BitBalloon logo"/></a></h1>
+        <div class="claim">Hosting for your HTML5 sites &amp; apps</div>
+      </div>
+      <div class="large-7 medium-5 columns">
+        <nav>
+          <ul class="inline-list inline-blocks right main-nav">
+            <li class="breadcrumbs">
+            <a href="/">Website</a>
+            {{#link-to 'home'}}Admin{{/link-to}}
+            <span>{{ currentAction }}</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+      
+  <div class="main">
+    <div class="row">
+      <div class="large-12 columns large-centered">
+        <div class="sheet wide-margins">
+          {{outlet}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="site-footer">
+  </section>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name='components/cms/widgets/tags-control'>
+    <label>{{widget.label}}</label>
+    {{input value=widget.stringValue}}
+  </script>
+
+  <script src="<%= cmsBase %>/assets/vendor.js"></script>
+  <script src="<%= cmsBase %>/assets/cms.js"></script>
+  <script>
+  CMSComponent('cms/widgets/tags-control', {
+    init: function() {
+      this._super();
+      this.set("widget.stringValue", (this.get("widget.value") || []).join(","));
+    },
+    updateWidgetValue: function() {
+      this.set("widget.value", this.get("widget.stringValue").split(",").map(function(e) { return e.trim(); }));
+    }.observes("widget.stringValue")
+  });
+  </script>
+</body>
+</html>

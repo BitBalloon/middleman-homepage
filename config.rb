@@ -24,6 +24,9 @@
 #   page "/admin/*"
 # end
 
+page "/admin/views/*.html", :directory_index => false
+page "/admin/views/**/*.html", :directory_index => false
+
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
@@ -69,6 +72,10 @@ page "/blog/*", :layout => "post"
 page "/blog.xml", :layout => false
 
 helpers do
+  def cmsBase
+    ENV['CMS_ENV'] == 'development' ? '//localhost:4200' : '//ember-cms.netlify.com'
+  end
+
   def related(page, limit = 3)
     all_pages = blog.tags.slice(*page.tags).values.flatten
     return [] if all_pages.blank?
