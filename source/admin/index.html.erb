@@ -54,7 +54,7 @@ layout: false
   </section>
   </script>
 
-  <script type="text/x-handlebars" data-template-name='components/cms/widgets/tags-control'>
+  <script type="text/x-handlebars" data-template-name='components/tags-control'>
     <label>{{widget.label}}</label>
     {{input value=widget.stringValue}}
   </script>
@@ -62,7 +62,7 @@ layout: false
   <script src="<%= cmsBase %>/assets/vendor.js"></script>
   <script src="<%= cmsBase %>/assets/cms.js"></script>
   <script>
-  CMSComponent('cms/widgets/tags-control', {
+  CMSComponent('tags-control', {
     init: function() {
       this._super();
       this.set("widget.stringValue", (this.get("widget.value") || []).join(","));

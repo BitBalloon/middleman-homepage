@@ -5,6 +5,7 @@ collections:
     label: "Blog Post"
     create: true
     folder: "source/blog"
+    sort: "title:asc"
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h2", class: "entry-title text-center"}
       - {label: "Author", name: "author", widget: "string", tagname: "p", class: "entry-meta"}
