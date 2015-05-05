@@ -7,6 +7,8 @@ layout: page
 
 Get your API credentials [here](/applications).
 
+Test <strong>Hello</strong> what now?
+
 ### Zapier Integration
 
 BitBalloon's API is integrated with [Zapier](https://zapier.com/developer/invite/3654/fc79b726d2f9f38f33ca4bc36397cb23/) so you can trigger automated tasks when a specific event happens on your site, no programming required! For example, you could create the following recipe with just a couple of clicks:

@@ -6,7 +6,7 @@ layout: false
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <title>Timespace CMS</title>
   <link rel="stylesheet" href="/css/normalize.css" />
   <link rel="stylesheet" href="/css/main.css" />
@@ -31,16 +31,14 @@ layout: false
         <nav>
           <ul class="inline-list inline-blocks right main-nav">
             <li class="breadcrumbs">
-            <a href="/">Website</a>
-            {{#link-to 'home'}}Admin{{/link-to}}
-            <span>{{ currentAction }}</span>
+              {{cms-breadcrumbs}}
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-      
+
   <div class="main">
     <div class="row">
       <div class="large-12 columns large-centered">
@@ -54,7 +52,7 @@ layout: false
   </section>
   </script>
 
-  <script type="text/x-handlebars" data-template-name='components/tags-control'>
+  <script type="text/x-handlebars" data-template-name='cms/widgets/tags-control'>
     <label>{{widget.label}}</label>
     {{input value=widget.stringValue}}
   </script>
@@ -62,7 +60,7 @@ layout: false
   <script src="<%= cmsBase %>/assets/vendor.js"></script>
   <script src="<%= cmsBase %>/assets/cms.js"></script>
   <script>
-  CMSComponent('tags-control', {
+  CMS.WidgetControl('tags', {
     init: function() {
       this._super();
       this.set("widget.stringValue", (this.get("widget.value") || []).join(","));

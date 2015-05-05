@@ -73,7 +73,7 @@ page "/blog.xml", :layout => false
 
 helpers do
   def cmsBase
-    ENV['CMS_ENV'] == 'development' ? '//localhost:4200' : '//ember-cms.netlify.com'
+    ENV['CMS_ENV'] == 'development' ? '//localhost:4200' : '//cms.netlify.com'
   end
 
   def related(page, limit = 3)
