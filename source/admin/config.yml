@@ -1,4 +1,5 @@
 backend:
+  name: github_api
   repo: BitBalloon/middleman-homepage
   branch: master
 
@@ -21,7 +22,8 @@ collections:
     create: true
     folder: "source/docs"
     fields:
-      - {label: "Title", name: "title", widget: "string", tagname: "h2"}
-      - {label: "Position", name: "position", widget: "string"}
       - {name: "layout", widget: "hidden", default: "docs"}
       - {label: "Body", name: "body", widget: "markdown"}
+    meta:
+      - {label: "Title", name: "title", widget: "string", optional: false}
+      - {label: "Position", name: "position", widget: "string", optional: false}
