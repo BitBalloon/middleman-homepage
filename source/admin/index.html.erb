@@ -19,39 +19,6 @@ layout: false
   <base href="/admin/">
 </head>
 <body>
-
-  <script type="text/x-handlebars" data-template-name='cms/application'>
-  <header>
-    <div class="row">
-      <div class="large-5 medium-7 columns">
-        <h1 class="brand"><i class="icon-balloon"></i><a href="/"><img class="logo" src="/images/bitballoon-logo.svg" alt="BitBalloon logo"/></a></h1>
-        <div class="claim">Hosting for your HTML5 sites &amp; apps</div>
-      </div>
-      <div class="large-7 medium-5 columns">
-        <nav>
-          <ul class="inline-list inline-blocks right main-nav">
-            <li class="breadcrumbs">
-              {{cms-breadcrumbs}}
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <div class="main">
-    <div class="row">
-      <div class="large-12 columns large-centered">
-        <div class="sheet wide-margins">
-          {{outlet}}
-        </div>
-      </div>
-    </div>
-  </div>
-  <section class="site-footer">
-  </section>
-  </script>
-
   <script type="text/x-handlebars" data-template-name='cms/widgets/tags-control'>
     <label>{{widget.label}}</label>
     {{input value=widget.stringValue}}

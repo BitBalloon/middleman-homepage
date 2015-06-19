@@ -4,44 +4,10 @@
   border-radius: 4px;
 }
 
-.cms-entry-title, .cms-action-title, .cms-collection-title {
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-.cms-form-title {
-  border-bottom: 1px solid;
-  padding-bottom: 25px;
-}
-
-.cms-subtitle {
-  color: #444;
-  margin-bottom: 30px;
-  font-weight: normal;
-}
-
-.cms-markdown-body textarea {
-  font-size: 18px;
-  line-height: 1.43;
-}
-
 .cms-preview .entry-meta {
   text-align: center;
   display: block;
   color: gray;
   font-size: 1em;
   margin: .5em auto 1em;
-}
-
-.cms-button {
-  box-shadow: none;
-  padding: 9px 15px 7px;
-  color: #fff !important;
-  font-weight: 200;
-  border-radius: 0;
-  background: #2d72d9;
-  border: none;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.9);
-  box-shadow: 1px 1px rgba(0, 0, 5, 0.2);
 }
