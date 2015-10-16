@@ -103,6 +103,14 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :bitballoon do |bitballoon|
+  bitballoon.token = ENV["BB_TOKEN"]
+  bitballoon.site  = "middleman-test-site.bitballoon.com"
+
+  # Optional: always run a build before deploying
+  bitballoon.build_before = true
+end
+
 
 after_build do |builder|
   src = File.join(config[:source],"_redirects")

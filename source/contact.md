@@ -7,7 +7,7 @@ title: Contact BitBalloon
 
 Questions? Comments? Drop us a note!
 
-<form accept-charset="UTF-8" name="contact" action="/contact" method="post">
+<form accept-charset="UTF-8" name="contact" action="/contact" method="post" netlify-honeypot="title">
   <p>
     <label>Your Name</label>
     <input name="name" type="text" required>
@@ -15,6 +15,10 @@ Questions? Comments? Drop us a note!
   <p>
     <label>Your Email</label>
     <input name="email" type="email" required>
+  </p>
+  <p class="honey">
+    <label>Your Title (don't fill in if you're human)</label>
+    <input name="title" type="text">
   </p>
   <p>
     <label>Your Message</label>

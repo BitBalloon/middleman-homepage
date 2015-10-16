@@ -74,12 +74,18 @@
         <div class="large-12 columns">
           <h2>Contact Us</h2>
 
-          <form name="contact">
+          <form name="contact" netlify-honeypot="title">
             <div class="row">
               <div class="large-6 columns">
                 <p>
                   <label>Name</label>
                   <input name="name" type="text" required>
+                </p>
+              </div>
+              <div class="large-6 columns honey">
+                <p>
+                  <label>Name (Don't fill out if you're human)</label>
+                  <input name="title" type="text">
                 </p>
               </div>
               <div class="large-6 columns">

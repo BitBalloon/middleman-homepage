@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 
 gem "middleman", "~>3.2.1"
 gem "redcarpet"
+gem "eventmachine", "~> 1.0.7"
 
 gem "middleman-blog"
 
@@ -22,3 +23,4 @@ gem "builder"
 # For deploying to BitBalloon
 gem "bitballoon"
 
+gem 'middleman-bitballoon'
