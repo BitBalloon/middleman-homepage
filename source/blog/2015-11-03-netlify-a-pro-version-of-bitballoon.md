@@ -13,6 +13,8 @@ cmsUserSlug: ""
 date: 2015-11-03
 ---
 
+![BitBalloon to netlify](/images/posts/bitballoon-to-netlify.png)
+
 A while back we introduced our new product for pro developers, [netlify](https://www.netlify.com/).
 
 It’s a complete suite of hosting services for modern static websites, and even includes an opensource CMS.
