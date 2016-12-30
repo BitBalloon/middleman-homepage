@@ -426,14 +426,14 @@
     display: inline-block;
   }
   i {
-    color: white;
+    color: #00C7B7;
     width: 50px;
     height: 50px;
-    line-height: 50px;
-    background: rgb(44, 122, 223);
+    line-height: 47px;
     border-radius: 100%;
+    border: 2px solid #00C7B7;
     display: inline-block;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     margin: 0 0.3em 0.5em 0;
     &.icon-cloud-upload {
@@ -443,12 +443,16 @@
   .row {
     margin-bottom: 1.8em;
   }
-  .major i {
-    font-size: 100px;
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-    margin: 35px 0 0 0;
+  .major {
+    text-align: center;
+
+    i {
+      font-size: 100px;
+      width: 150px;
+      height: 150px;
+      line-height: 140px;
+      margin: 35px 0 0 0;
+    }
   }
 }
 
