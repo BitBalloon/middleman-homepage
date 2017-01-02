@@ -1,10 +1,5 @@
 /*** HOME ****************************************/
 
-.home header {
-  .icon-balloon { font-size: 42px; }
-  .main-nav { margin-top: 1em; }
-}
-
 .dropzone {
   color: #313D3E;
   position: relative;
@@ -16,10 +11,35 @@
   h1, h2, h3, h4, h5, h6, p {
     color: #313D3E;
   }
-  h2 {
-    margin: 2.2em 0 1.35em;
+  h1 {
+    margin: 2.2em 0 .5em;
     font-size: 2.5em;
     font-weight: 300;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0 0 1.35em;
+    text-align: center;
+
+    @media screen and (min-width: 640px) {
+      font-size: 1.5em;
+    }
+
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+    }
+
+    a {
+      color: #313D3E;
+      border-bottom: 1px solid #8B8B8B;
+      padding-bottom: 2px;
+      transition: padding .2s ease;
+
+      &:hover {
+        padding-bottom: 0;
+      }
+    }
   }
   .lead {
     font-size: 1.6em;
@@ -463,17 +483,36 @@
 	background: #fff;
 	max-width: 70em;
 	margin: 0 auto;
+
+  .button {
+    background: #00C7B7;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: .7em 1em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-decoration: none;
+    text-shadow: none;
+    transition: background .15s ease-out;
+    color: white;
+    display: inline-block;
+
+    &:hover {
+      background: #07d2c1;
+    }
+  }
 }
 .tiers {
   margin-bottom: 3em;
-	li {
-		padding: 2em 0;
-		&:hover {
-			background: rgb(247, 249, 253);
-		}
-	}
 	text-align: center;
-	a { text-decoration: none; }
+  li {
+    padding: 2em 0;
+    transition: background .2s ease;
+    &:hover {
+      background: #ebfbf9;
+    }
+  }
 	.image-container {
 		height: 12em;
 	}
