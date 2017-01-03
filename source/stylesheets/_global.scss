@@ -394,12 +394,20 @@ header {
     }
   }
   #login-button {
+    background: white;
     border: 1px solid #00C7B7;
     border-radius: 4px;
+    color: #00C7B7;
     font-weight: 500;
     margin-top: -3px;
     padding: 8px 16px;
     text-transform: capitalize;
+    transition: background .2s ease, color .2s ease;
+
+    &:hover {
+      background: #00C7B7;
+      color: white;
+    }
   }
   .dropdown-trigger:after {
     content: " ";
