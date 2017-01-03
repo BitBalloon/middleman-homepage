@@ -679,21 +679,30 @@ $number-size: 70px;
   list-style: none;
   padding-top: 1em;
   li {
+    border-radius: 4px;
     line-height: 2.8em;
     padding-left: 1em;
     width: 100%;
     display: block;
+    transition: all .2s ease;
     a {
+      color: #313D3E;
       text-decoration: none;
       display: block;
+      transition: color .2s ease;
+
+      &:hover {
+        color: white;
+      }
     }
     .icon-external-link { margin-left: .2em }
     &:hover {
-      background: rgba(104, 155, 211, 0.11);
+      background: #00C7B7;
+      opacity: .6;
     }
     &.current {
       font-weight: 600;
-      background: #689BD3;
+      background: #00C7B7;
       a { color: #FFF; }
     }
   }
@@ -712,6 +721,15 @@ $number-size: 70px;
         color: gray;
       }
     }
+  }
+  pre {
+    background: #E6E6E6;
+    border-radius: 4px;
+  }
+  code {
+    font-family: 'Roboto Mono', monospace;
+    color: #313D3E;
+    font-weight: 700;
   }
 }
 .big-docs-icon {
@@ -800,18 +818,21 @@ $number-size: 70px;
 
 .blog {
   header {
-    max-width: 62em;
+    max-width: 42em;
     margin: 1em auto 0;
     .entry-title {
       margin-bottom: 0;
-      font-weight: 400;
-      font-size: 3.3em;
+      font-weight: 300;
+      font-size: 40px;
+
+      a {
+        color: #313D3E;
+      }
     }
     .entry-meta {
-      text-align: center;
       display: block;
       color: gray;
-      font-size: 1em;
+      font-size: 14px;
       margin: .5em auto 1em;
     }
   }
@@ -820,7 +841,17 @@ $number-size: 70px;
     margin: 0 auto 3em;
   }
   .entry-content {
-    p { font-size: 1.4em; }
+    p { font-size: 18px; }
+  }
+  .entry-title,
+  .entry-content {
+    a {
+      transition: color .2s ease;
+
+      &:hover {
+        color: #00C7B7;
+      }
+    }
   }
   img {
     margin: 0 auto;

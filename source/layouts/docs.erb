@@ -1,6 +1,6 @@
 <% wrap_layout :layout do %>
   <div class="main">
-    <div class="row  sheet">
+    <div class="row">
       <div class="large-3 columns">
         <ul class="docs-nav">
           <% sitemap.where(:layout.equal => "docs").order_by(:position).all.each do |page| %>

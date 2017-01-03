@@ -3,7 +3,7 @@ layout: layout
 title: BitBalloon - The Blog
 ---
 <div class="main blog">
-  <section class="sheet">
+  <section>
     <div class="row">
 
       <div class="columns large-12 ">
@@ -13,7 +13,7 @@ title: BitBalloon - The Blog
           <% blog.articles.each do |article| %>
           <article>
             <header>
-              <h2 class="entry-title text-center"><a href="<%= article.url %>"><%=  article.title %></a></h2>
+              <h2 class="entry-title"><a href="<%= article.url %>"><%=  article.title %></a></h2>
 
               <p class="entry-meta">
                 Written by <%= article.data.author %> on
