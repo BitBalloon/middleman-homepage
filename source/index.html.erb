@@ -58,30 +58,6 @@ class_name: "home"
   </div>
 </section>
 
-<div class="main showcase">
-  <div class="row">
-    <div class="large-12-columns">
-      <div class="page-header text-center">
-        <h1>Examples</h1>
-        <p class="subheader">A small selection of sites hosted on BitBalloon</p>
-      </div>
-      <ul class="small-block-grid-2 large-block-grid-3">
-        <% sitemap.where({approved: true}).all.find_all {|r| r.path.match /^showcase\// }.each do |example| %>
-          <li>
-            <a href="<%= example.data.url %>" class="screenshot" target="_blank">
-              <div class="thumbnail">
-                <img src="<%= example.path.sub(/html/,'jpg') %>">
-                <div class="description"><%= example.render(:layout => false) %></div>
-              </div>
-              <h4 class="text-center"><%= example.data.title %></h4>
-            </a>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-</div>
-
 
 <section class="home-footer">
   <div class="row">
