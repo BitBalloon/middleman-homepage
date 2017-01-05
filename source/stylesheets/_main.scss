@@ -198,8 +198,12 @@
     font-size: 70px;
     width: 130px;
     height: 130px;
-    line-height: 125px;
+    line-height: 130px;
     border: 2px solid #00C7B7;
+
+    &.icon-money {
+      font-size: 58px;
+    }
   }
 
 
