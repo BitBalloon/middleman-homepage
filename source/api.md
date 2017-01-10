@@ -38,7 +38,7 @@ Here's some examples of whats possible once you've authenticated:
 * Hook deployment into your workflow (eg. Github)
 * Add deployment into your own app (eg. a site generator)
 
-**[<i class="icon-book"></i> Read the API documentation](https://github.com/BitBalloon/bitballoon-api)**
+**[<i class="lnr lnr-book"></i> Read the API documentation](https://github.com/BitBalloon/bitballoon-api)**
 
 ### BitBalloon Gem
 

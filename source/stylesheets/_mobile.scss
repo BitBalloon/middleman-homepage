@@ -1,6 +1,6 @@
 @media #{$large} {
   .new.project-card {
-    .icon-cloud-upload {
+    .lnr.lnr-cloud-upload {
       margin-top: 50px;
     }
   }
@@ -75,7 +75,7 @@
   .new-deploy {
     width: 100%;
     .new.project-card {
-      .icon-cloud-upload {
+      .lnr.lnr-cloud-upload {
         font-size: 90px;
         margin-top: 40px;
       }

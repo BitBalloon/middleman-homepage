@@ -77,21 +77,20 @@
     margin: 2.2em auto 1em;
     transition: background .2s ease;
 
-    .icon-cloud-upload {
+    .lnr.lnr-cloud-upload {
       display: block;
       color: #fff;
-      font-size: 130px;
-      margin: 5px auto 0px;
+      font-size: 200px;
+      margin: -35px auto -20px;
       position: relative;
       transition: color .2s ease;
     }
     .headline {
-      margin-top: 1em;
-      margin-bottom: 0.4em;
       font-size: 1.2em;
       line-height: 1.2em;
       max-width: 14em;
       font-weight: 500;
+      text-align: center;
       margin: 1em auto 0;
       color: #313D3E;
       color: rgba(49, 61, 62, .8);;
@@ -100,7 +99,7 @@
     &:hover {
       background: rgba(255,255,255,.2);
 
-      .icon-cloud-upload {
+      .lnr.lnr-cloud-upload {
         color: #07d2c1;
       }
     }
@@ -140,9 +139,16 @@
     display: block;
     margin: 0 auto;
     border-radius: 100%;
+    text-align: center;
     &:hover {
       border-color: rgba(255, 255, 255, 0.8);
       color: rgba(255, 255, 255, 1);
+    }
+
+    i {
+      font-size: .6em;
+      position: relative;
+      top: -0.25em;
     }
   }
 }
@@ -192,17 +198,22 @@
   i {
     color: #00C7B7;
     border-radius: 100%;
+    box-sizing: border-box;
     display: block;
     margin: 0 auto;
     text-align: center;
-    font-size: 70px;
-    width: 130px;
-    height: 130px;
-    line-height: 130px;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     border: 2px solid #00C7B7;
 
-    &.icon-money {
-      font-size: 58px;
+    &.lnr-tag,
+    &.lnr-rocket {
+      padding: 0 0 4px 0;
+    }
+    &.lnr-select {
+      padding: 4px 0 0 4px;
     }
   }
 
@@ -287,6 +298,10 @@
 
   a {
     font-weight: 500;
+
+    &:hover {
+      color: #07d2c1;
+    }
   }
 }
 .cta {
@@ -304,12 +319,12 @@
       display: block;
     }
 
-    .icon-cloud-upload {
+    .lnr.lnr-cloud-upload {
       display: block;
       color: #313D3E;
       color: rgba(49, 61, 62, 0.4);
-      font-size: 70px;
-      margin: 5px auto 0px;
+      font-size: 100px;
+      margin: -15px auto;
       position: relative;
       transition: color .2s ease;
     }
@@ -328,7 +343,7 @@
     &:hover {
       background: rgba(255,255,255,.2);
 
-      .icon-cloud-upload {
+      .lnr.lnr-cloud-upload {
         color: #07d2c1;
       }
     }
@@ -460,7 +475,7 @@
     font-size: 24px;
     text-align: center;
     margin: 0 0.3em 0.5em 0;
-    &.icon-cloud-upload {
+    &.lnr.lnr-cloud-upload {
       font-size: 25px;
     }
   }
@@ -474,7 +489,7 @@
       font-size: 100px;
       width: 150px;
       height: 150px;
-      line-height: 140px;
+      line-height: 147px;
       margin: 35px 0 0 0;
     }
   }
@@ -539,8 +554,9 @@
       text-align: center;
     }
     img {
-      width: 4em;
-      margin-top: 3em
+      width: 6em;
+      margin-top: 2em;
+      margin-left: -1em;
     }
     p {
       margin: 0 0 2em;
@@ -649,7 +665,7 @@
   }
   .dashed-box {
     margin-bottom: 3em;
-    .icon-cloud-upload {
+    .lnr.lnr-cloud-upload {
       margin: 0 auto;
       width: 100%;
       display: inline-block;
@@ -699,7 +715,7 @@ $number-size: 70px;
         color: white;
       }
     }
-    .icon-external-link { margin-left: .2em }
+    .lnr.lnr-external-link { margin-left: .2em }
     &:hover {
       background: #00C7B7;
       opacity: .6;

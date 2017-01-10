@@ -164,7 +164,7 @@ textarea {
 .title {
   font-weight: normal;
   margin: 0;
-  .icon-site {
+  .lnr.lnr-site {
     height: 0.8em;
     margin-right: 10px;
     margin-top: -5px;
@@ -338,7 +338,7 @@ button.secondary, .button.secondary {
 header {
   margin: 10px 0px;
   position: relative;
-  .icon-balloon {
+  .lnr.lnr-balloon {
     float: left;
     margin: 8px 10px 0 0;
     font-size: 42px;
@@ -346,21 +346,22 @@ header {
   .logo {
     color: #fff;
     float: left;
-    margin: 10px 0 12px;
-    height: 40px;
+    margin: 10px 0 -11px;
+    height: 63px;
   }
   .claim {
     display: block;
     float: left;
     font-size: 16px;
     font-weight: 400;
-    margin: -27px 0 0 10px;
-    text-align: right;
+    margin: -27px 0 0 0;
+    text-align: left;
     width: 184px;
 
     @media screen and (min-width: 480px) {
       display: initial;
       margin: 15px 0 0 10px;
+      text-align: right;
       width: initial;
     }
 
@@ -447,7 +448,7 @@ header {
   margin: 0;
   text-align: center;
   padding: 20px;
-  .icon-cloud-upload {
+  .lnr.lnr-cloud-upload {
     margin: -8px auto 0;
     position: relative;
   }
