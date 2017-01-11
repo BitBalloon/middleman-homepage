@@ -3,30 +3,32 @@ html, body { height: 100%; }
 body {
   background: #fff;
 }
+
 ol {
   padding-left: 1.5em;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
-  color: rgb(22, 49, 73);
-  font-family: "Avenir Next";
+  color: #313D3E;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3.lighter {
   font-weight: normal;
 }
 
-strong { font-weight: 600 }
-.light { font-weight: 400 }
+strong { font-weight: 700 }
+.light { font-weight: 300 }
 
 a, a:visited, a:active {
-  color: #2d72d9;
+  color: #00C7B7;
+  text-decoration: none;
 }
 
-a:hover { text-decoration: underline; color: #3892E3; }
+a:hover { color: #3892E3; }
 
 a.block { display: block; }
 
@@ -81,7 +83,7 @@ iframe {
   }
 }
 
-p, ul, ol { font-size: 18px; line-height: 1.45; }
+p, ul, ol { font-size: 16px; line-height: 1.45; }
 
 
 .full-width {
@@ -109,8 +111,12 @@ ul.pagination li.current a {
   @include clearfix;
 }
 .inline-list.inline-blocks li {
-  float: none;
   display: inline-block;
+  float: right;
+
+  @media screen and (min-width: 1024px) {
+    float: none;
+  }
 }
 
 .row { max-width: 72em; }
@@ -149,17 +155,16 @@ textarea {
 }
 
 .main {
-  background: rgb(241, 245 , 248);
-  background: rgb(232, 235, 238);
+  background: #fbfbfb;
+  background-image: linear-gradient(0deg, white 97%, #f9f9f9 100%);
   margin: 0 0 30px;
   padding: 30px 40px;
-  min-height: 700px;
 }
 
 .title {
   font-weight: normal;
   margin: 0;
-  .icon-site {
+  .lnr.lnr-site {
     height: 0.8em;
     margin-right: 10px;
     margin-top: -5px;
@@ -192,11 +197,13 @@ article + article {
 .screenshot {
   display: block;
   margin-bottom: 20px;
-  // border-radius: 4px;
+
   .thumbnail {
+    border-radius: 4px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: box-shadow .2s ease;
   }
   img { display: block; }
   h4 {
@@ -205,15 +212,21 @@ article + article {
     color: #666;
   }
   .description {
-    background: rgba(100,100,100, 0.8);
+    background: rgba(0,0,0,.8);
     color: #fff;
+    display: none;
     position: absolute;
     bottom: -100%;
-    transition: all 0.2s ease-in-out;
-    border-top: solid 1px rgba(100,100,100,0.8);
-    padding: 12px;
+    transition: all .2s ease;
+    padding: 20px;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
+    height: 100%;
+
+    @media screen and (min-width: 768px) {
+      display: initial;
+    }
+
     p {
       color: #fff;
       font-size: 14px;
@@ -222,6 +235,14 @@ article + article {
   }
   &:hover {
     text-decoration: none;
+
+    h4 {
+      color: #00C7B7;
+    }
+
+    .thumbnail {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
     .description {
       bottom: 0;
     }
@@ -304,52 +325,90 @@ button.secondary, .button.secondary {
 
 // Layout
 
-footer {
-  padding: 30px 10px 6px;
+.site-footer {
+  padding: 30px 0 6px;
   background: white;
-  p, li a { font-size: 16px; font-weight: 200px; }
-
+  p, li, a {
+    font-size: 12px;
+    font-weight: 200px;
+    margin-left: 4px;
+  }
 }
 
 header {
   margin: 10px 0px;
   position: relative;
-  .icon-balloon { float: left; margin-right: 10px; font-size: 57px; }
+  .lnr.lnr-balloon {
+    float: left;
+    margin: 8px 10px 0 0;
+    font-size: 42px;
+  }
   .logo {
     color: #fff;
-    display: block;
-    margin: 10px 0 12px;
-    height: 40px;
+    float: left;
+    margin: 10px 0 -11px;
+    height: 63px;
   }
   .claim {
+    display: block;
+    float: left;
     font-size: 16px;
-    margin: -10px 0 10px 32px;
     font-weight: 400;
-    line-height: 1em;
-    width: 172px;
-    text-align: right;
+    margin: -27px 0 0 0;
+    text-align: left;
+    width: 184px;
+
+    @media screen and (min-width: 480px) {
+      display: initial;
+      margin: 15px 0 0 10px;
+      text-align: right;
+      width: initial;
+    }
+
+    @media screen and (min-width: 640px) {
+      margin: 13px 0 0 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin: 21px 0 0 10px;
+      text-align: left;
+    }
   }
   h1 { margin: 0; }
   .main-nav {
-    margin: 1.5em 0 0 0;
+    margin: .8em 0 0 0;
+
     > li {
       margin: 0 1.8em .4em 0;
       font-size: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
       > a {
         color: rgb(132, 138, 143);
         &.current {
           color: #36383A;
         }
-        &:hover {
-          color: rgb(81, 83, 85);
-        }
       }
     }
   }
-  .auth {
-    position: relative;
-    opacity: 0.9;
-    &:hover { opacity: 1; }
+  #login-button {
+    background: white;
+    border: 1px solid #00C7B7;
+    border-radius: 4px;
+    color: #00C7B7;
+    font-weight: 500;
+    margin-top: -3px;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    transition: background .2s ease, color .2s ease;
+
+    &:hover {
+      background: #00C7B7;
+      color: white;
+    }
   }
   .dropdown-trigger:after {
     content: " ";
@@ -389,7 +448,7 @@ header {
   margin: 0;
   text-align: center;
   padding: 20px;
-  .icon-cloud-upload {
+  .lnr.lnr-cloud-upload {
     margin: -8px auto 0;
     position: relative;
   }

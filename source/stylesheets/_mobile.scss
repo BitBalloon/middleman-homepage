@@ -1,6 +1,6 @@
 @media #{$large} {
   .new.project-card {
-    .icon-cloud-upload {
+    .lnr.lnr-cloud-upload {
       margin-top: 50px;
     }
   }
@@ -11,7 +11,7 @@
   .dropzone .main-message {
     font-size: 2.3em;
     max-width: 17em;
-    margin: 2em auto 1em;
+    margin: 2em auto .5em;
   }
   .dropzone .headline {
     margin-top: 0.8em;
@@ -75,7 +75,7 @@
   .new-deploy {
     width: 100%;
     .new.project-card {
-      .icon-cloud-upload {
+      .lnr.lnr-cloud-upload {
         font-size: 90px;
         margin-top: 40px;
       }
@@ -127,7 +127,7 @@
   }
   .home-hero {
     .main-message {
-      margin: .4em auto 1em;
+      margin: .4em auto .5em;
       font-size: 1.6em;
     }
     .lead {

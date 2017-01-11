@@ -9,22 +9,23 @@ class_name: "home"
     <div class="row">
 
       <div class="large-6 columns">
-        <h2 class="main-message">The ultimate hosting platform for your <span class="experiment4_terminology">static</span> sites & apps</h2>
+        <h1 class="main-message">You're site online in seconds.</h1>
+        <h1 class="signed-in-cta">You're signed in, try publishing!</h1>
+        <h2 class="tagline">Powered by <a href="https://www.netlify.com">Netlify</a>.</h2>
 
         <a href="/login" class="sign-up-button">Sign Up for Free</a>
 
-        <h3 class="signed-in-cta">You're signed in, try publishing!</h3>
       </div>
 
       <div class="large-5 right columns">
         <div class="dashed-box">
-          <i class="icon-cloud-upload cloud-icon"></i>
-          <h2 class="headline">Drag Your Site<br/><span class="folder-support">Folder</span><span class="no-folder-support">Zip File</span> Here</h2>
+          <i class="lnr lnr-cloud-upload cloud-icon"></i>
+          <h2 class="headline">Drag Your Site <span class="folder-support">Folder</span><span class="no-folder-support">Zip File</span> Here</h2>
         </div>
-        <h5 class="demo-cta text-center">Don't have a site handy? <a href="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/55e89202-c409-4906-9778-50049431da45/synergy-landing.zip">Download a demo site</a></h5>
+        <h5 class="demo-cta text-center">Don't have a site handy? <a href="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/55e89202-c409-4906-9778-50049431da45/synergy-landing.zip">Download a demo site</a>.</h5>
       </div>
 
-      <div class="down-hint"><a href="#reasons"><i class="icon-angle-down"></i></a></div>
+      <div class="down-hint"><a href="#reasons"><i class="lnr lnr-chevron-down"></i></a></div>
 
     </div>
 
@@ -38,70 +39,44 @@ class_name: "home"
 <section id="reasons" class="text-center">
   <div class="row">
     <div class="large-4 columns">
-      <div><i class="icon-cogs"></i></div>
-      <h3>Infinitely Scalable</h3>
-      <p>BitBalloon automatically optimizes your site to keep it performing blazing fast from prototype to production.</p>
+      <div><i class="lnr lnr-tag"></i></div>
+      <h3>Free</h3>
+      <p>Bitballoon is free and is built to give you the easiest way in the world to get your site online.</p>
     </div>
 
     <div class="large-4 columns">
-      <div><i class="icon-form"></i></div>
-      <h3>Magic Forms</h3>
-      <p>BitBalloon detects HTML forms and creates an instant database for your form submissions.</p>
+      <div><i class="lnr lnr-select"></i></div>
+      <h3>Drag &amp; Drop</h3>
+      <p>Simply drag your site folder onto Bitballoon and your site is live.  Perfect for code schools and prototypes.</p>
     </div>
 
     <div class="large-4 columns">
-      <div><i class="icon-code"></i></div>
-      <h3>Developer Friendly</h3>
-      <p>BitBalloon comes with both a REST API and command line tools. Deploy a project in <strong>one line</strong> of code.</p>
+      <div><i class="lnr lnr-rocket"></i></div>
+      <h3>Scalability</h3>
+      <p>If you need more functionality like custom domains or HTTPS, simply upgrade to <a href="https://www.netlify.com">Netlify</a> with a single click.</p>
     </div>
   </div>
 </section>
 
-<div class="main showcase">
-  <div class="row">
-    <div class="large-12-columns">
-      <div class="page-header text-center">
-        <h1>Examples</h1>
-        <h3 class="subheader">A small selection of sites hosted on BitBalloon</h3>
-      </div>
-      <ul class="small-block-grid-1 large-block-grid-3">
-        <% sitemap.where({approved: true}).all.find_all {|r| r.path.match /^showcase\// }.each do |example| %>
-          <li>
-            <a href="<%= example.data.url %>" class="screenshot" target="_blank">
-              <div class="thumbnail">
-                <img src="<%= example.path.sub(/html/,'jpg') %>">
-                <div class="description"><%= example.render(:layout => false) %></div>
-              </div>
-              <h4 class="text-center"><%= example.data.title %></h4>
-            </a>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-</div>
-
 
 <section class="home-footer">
-  <div class="white-bg"></div>
-  <div class="white-fade"></div>
-
   <div class="row">
     <div class="large-12 columns try-it-out">
       <h2 class="text-center light">
         Try it out!
       </h2>
-      <h5 class="text-center">Don't have a static site handy? Download this <a href="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/55e89202-c409-4906-9778-50049431da45/synergy-landing.zip">demo site <i class="icon-download"></i></a></h5>
+      <h5 class="text-center hide-for-small">Don't have a static site handy? Download this <a href="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/55e89202-c409-4906-9778-50049431da45/synergy-landing.zip">demo site</a>.</h5>
+      <a href="/login" class="sign-up-button">Sign Up for Free</a>
     </div>
   </div>
   <div class="row">
     <div class="cta large-6 medium-8 medium-centered large-centered columns">
       <div class="white dashed-box">
         <div class="row">
+          <i class="lnr lnr-cloud-upload redeploy-cloud"></i>
           <div>
             <h3 class="headline text-center">Drag your <span class="folder-support">site folder</span><span class="no-folder-support">site zip</span> here</h3>
           </div>
-            <i class="icon-cloud-upload redeploy-cloud"></i>
         </div>
       </div>
     </div>
