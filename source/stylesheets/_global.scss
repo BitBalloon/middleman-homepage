@@ -28,7 +28,7 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
-a:hover { color: #3892E3; }
+a:hover { color: #00C7B7; }
 
 a.block { display: block; }
 
@@ -457,6 +457,10 @@ header {
 
 /******** NAV *******************************/
 
+.inline-list.inline-blocks li.navlink {
+  float: none;
+  line-height: 36px;
+}
 .nav-link {
   display: block;
   padding: 5px 10px;

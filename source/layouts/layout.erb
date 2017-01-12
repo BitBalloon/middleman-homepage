@@ -12,7 +12,6 @@
 
   <%= stylesheet_link_tag 'site' %>
 
-  <link rel="alternate" type="application/atom+xml" href="/blog.xml" title="Atom feed for the BitBalloon Blog"/>
 </head>
 <body class="<%= current_page.data.class_name %>">
   <script>
@@ -21,16 +20,15 @@
   </script>
   <header>
     <div class="row">
-      <div class="large-5 medium-7 small-8 columns">
+      <div class="large-5 medium-6 small-7 columns">
         <h1 class="brand"><a href="/"><img class="logo" src="/images/bitballoon-logo.svg" alt="BitBalloon logo"/></a><div class="claim">By <a href="https://www.netlify.com">Netlify</a></div></h1>
       </div>
-      <div class="large-7 medium-5 small-4 columns">
+      <div class="large-7 medium-6 small-5 columns">
         <nav>
           <ul class="inline-list inline-blocks right main-nav">
-            <li class="navlink"><a href="/features">Features</a></li>
+            <li class="navlink about-link"><a href="/about">About</a></li>
             <li class="navlink"><a href="/pricing">Pricing</a></li>
-            <li class="navlink"><a href="/blog">Blog</a></li>
-            <li>
+            <li class="sign-in-cta">
               <div class="auth">
                 <a href="/login" id="login-button">Sign in</a>
                 <div class="dropdown login-dropdown">
@@ -56,9 +54,6 @@
         <footer class="text-center">
           <ul class="inline-list inline-blocks">
             <li><a href="/about">About</a></li>
-            <li><a href="/partner">Partner</a></li>
-            <li><a href="/docs">Docs</a></li>
-            <li><a href="/blog">Blog</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/tos">Privacy &amp; Terms</a></li>
           </ul>

@@ -24,7 +24,7 @@ Questions? Comments? Drop us a note!
     <label>Your Message</label>
     <textarea name="message" rows="10" required></textarea>
   </p>
-  <button class="radius button" type="submit">Send</button>
+  <button class="primary-button contact" type="submit">Send</button>
 </form>
 
 Don't like contact forms? Mail us at <a href="mailto:team@bitballoon.com">team@bitballoon.com</a>

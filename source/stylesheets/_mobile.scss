@@ -30,9 +30,6 @@
     .lead {
       margin: 0 auto 1.2em;
     }
-    .sign-up-button {
-      margin: 0 auto 1em;
-    }
     .intro-video {
       padding-left: 0;
     }
@@ -65,9 +62,6 @@
     }
 
   }
-
-  header nav .navlink { display: none !important; }
-  header .main-nav { float: none !important; }
 
   .project-card .date, .project-card .status {
     font-size: 10px;
@@ -108,9 +102,16 @@
 
 
 @media #{$small} {
-  header nav .navlink { display: none !important; }
+  .inline-list.inline-blocks li {
+    &.navlink {
+      display: none;
+      float: none !important;
+    }
+    &.sign-in-cta {
+      display: block;
+    }
+  }
   header .claim { font-size: 14px; }
-  header .main-nav { float: none !important; }
   body { padding: 0 }
   .main { padding: 0; margin: 0; }
   .sheet{
