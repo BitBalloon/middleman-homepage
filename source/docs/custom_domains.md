@@ -23,7 +23,7 @@ You can also use any 3rd party domain registrant. If you prefer this option, we 
 To use an existing domain with BitBalloon, go to your site in the BitBalloon backend and click "Edit Domain", type in the domain you want for your site on and click "Next".
 
 * Create a CNAME that will "alias" your site to "www.bitballoon.com". If your domain is example.com, you might alias www.example.com to www.bitballoon.com.
-* Create an A record for the raw domain (example.com) pointing to 198.61.251.14
+* Create an A record for the raw domain (example.com) pointing to 104.198.14.52
 
 If your DNS provider supports CNAME or ALIAS records for apex domains you can instead alias the raw domain to www.bitballoon.com
 
